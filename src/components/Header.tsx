@@ -3,17 +3,12 @@ import { ImSearch } from "react-icons/im";
 import { useNavigate } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../store";
 import { useEffect } from "react";
-import { getBasketTotal } from "../features/basketSlice";
 
 function Header() {
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
   const { products } = useAppSelector((state) => state.basket);
   console.log(products, "carts");
-
-  useEffect(() => {
-    dispatch(getBasketTotal());
-  }, [dispatch]);
 
   return (
     <div className="header">

@@ -8,10 +8,8 @@ import { getBasketTotal } from "../features/basketSlice";
 
 import Basket from "../components/Basket";
 import { Product } from "../types/product";
-import ProductDetail from "../components/ProductDetail";
 
 function Cart() {
-  const navigate = useNavigate();
   const dispatch = useAppDispatch();
   const { products, totalAmount, itemCount } = useAppSelector(
     (state) => state.basket

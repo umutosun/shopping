@@ -5,6 +5,7 @@ import { Category } from "../types/product";
 
 const initialState: Category = {
   category: [],
+  loading: false,
 };
 export const getCategories = createAsyncThunk("category", async () => {
   const response = await axios.get(
@@ -18,9 +19,13 @@ const categorySlice = createSlice({
   initialState,
   reducers: {},
   extraReducers: (builder) => {
-    builder.addCase(getCategories.fulfilled, (state, action) => {
-      state.category = action.payload;
-    });
+    builder
+      .addCase(getCategories.fulfilled, (state, action) => {
+        state.category = action.payload;
+      })
+      .addCase(getCategories.pending, (state, action) => {
+        state.loading = true;
+      });
   },
 });
 export default categorySlice.reducer;

@@ -1,16 +1,9 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { BasketState, Product } from "../types/product";
 
-const fetchFromLocalStorage = () => {
-  let cart = localStorage.getItem("cart");
-  if (cart) {
-    return JSON.parse(localStorage.getItem("cart")!);
-  }
-}; // verileri çağırdığım fonksiyonum
-
 const storeInLocalStorage = (data: any) => {
   localStorage.setItem("cart", JSON.stringify(data));
-}; // dışarden verdiğimiz verileri localstorage kaydeden fonk
+};
 
 const initialState: BasketState = {
   products: [],
@@ -69,9 +62,8 @@ const basketSlice = createSlice({
 
     getBasketTotal: (state) => {
       state.totalAmount = state.products.reduce(
-        (basketTotal: number, basketItem: Product) => {
-          return (basketTotal =
-            basketTotal + basketItem.price * basketItem.quantity);
+        (basketTotal: number, product: Product) => {
+          return (basketTotal += product.price * product.quantity);
         },
         0
       );

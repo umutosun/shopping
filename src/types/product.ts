@@ -20,6 +20,7 @@ export interface ProductState {
 }
 export interface Category {
   category: [];
+  loading: boolean;
 }
 export interface BasketState {
   products: Product[];
