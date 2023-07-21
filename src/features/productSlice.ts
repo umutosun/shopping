@@ -3,7 +3,6 @@ import { PayloadAction, createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { Category, Product, ProductState } from "../types/product";
 
 import axios from "axios";
-import { STATUS } from "../utils/status";
 
 const initialState: ProductState = {
   data: [],
