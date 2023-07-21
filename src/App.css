@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+    background-color: rgb(207, 200, 188);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.header>h1{
+   padding: 25px;
+   cursor: pointer;
+}
+.header .input{
+    width: 150px;
+    height: 50px;
+    margin-top: 40px;
+    position: relative;
+    margin-left: -500px;
+}
+.header .input>input{
+    height: 35px;
+    width: 500px;
+    border-radius: 5px;
+    border: 0;
+    background-color: rgb(247, 227, 227);
+}
+.header .input .search{
+position: absolute;
+margin-top: -30px;
+margin-left: 470px;
+}
+.header .basket{
+    padding: 25px;
+    position: relative;
+}
+.header .basket .count{
+    position: absolute;
+    margin-left: 24px;
+    margin-top: 5px;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 8px;
+    color: white;
+    padding: 1px;
+}
+.product{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+.productCard{
+    border: 1px solid gray;
+    border-radius: 8px;
+    width: 250px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    position: relative;
+    left: 5px;
+    cursor: pointer;
+}
+.productCard>img{
+    width: 200px;
+    padding: 15px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.productCard .price{
+    position: absolute;
+    right: 0;
+    background-color: black;
+    color: white;
+    top: 2px;
+    padding: 5px;
+}
+.productCard .title{
+    font-size: 15px;
+    text-align:center;
+}
+.category{
+    cursor: pointer;
+    margin-left: 15px;
+}
+.ürünler{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.product_detail{
+    display: flex;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.product_detail>img{
+    width: 300px;
+    margin-top: 100px;
+    margin-left: 100px;
 }
-
-.App-link {
-  color: #61dafb;
+.product_detail .product_description{
+    margin-top: 150px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.basket>img{
+    width: 100px;
+    margin-left: 25px;
+    margin-top: 50px;
 }
