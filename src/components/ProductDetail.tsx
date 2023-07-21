@@ -13,16 +13,11 @@ type props = {
 
 const ProductDetail = ({ detail }: props) => {
   const dispatch = useAppDispatch();
-  const { products } = useAppSelector((state) => state.basket);
-  const increment = () => {
-    dispatch(icreaseBasketItem({ id: detail.id }));
-  };
-  const decrement = () => {
-    dispatch(decreaseBasketItem({ id: detail.id }));
-  };
+
   const addBasket = () => {
     dispatch(addBasketItem(detail));
   };
+  console.log();
 
   return (
     <div className="product_detail">
@@ -34,11 +29,6 @@ const ProductDetail = ({ detail }: props) => {
         <h4>Rating {detail?.rating?.rate}</h4>
         <h3>Price: {detail.price}$</h3>
 
-        <div>
-          <div onClick={decrement}>-</div>
-          <p>{products.map((product: Product) => product.quantity)}</p>
-          <div onClick={increment}>+</div>
-        </div>
         <button onClick={addBasket}>Add to Basket</button>
       </div>
     </div>

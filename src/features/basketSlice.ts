@@ -69,8 +69,9 @@ const basketSlice = createSlice({
 
     getBasketTotal: (state) => {
       state.totalAmount = state.products.reduce(
-        (cartTotal: number, cartItem: Product) => {
-          return cartTotal + cartItem.price * cartItem.quantity;
+        (basketTotal: number, basketItem: Product) => {
+          return (basketTotal =
+            basketTotal + basketItem.price * basketItem.quantity);
         },
         0
       );
