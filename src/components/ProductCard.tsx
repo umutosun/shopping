@@ -35,10 +35,6 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding-top: 15px;
-
-  @media ${device.tablet} {
-    margin-left: -15px;
-  }
 `;
 const Image = styled.img`
   width: 50%;

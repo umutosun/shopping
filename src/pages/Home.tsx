@@ -76,25 +76,18 @@ const Category = styled.div`
     margin-left: 2px;
     margin-bottom: 40px;
   }
-  @media ${device.tablet} {
-    gap: 0;
-    margin-left: 2px;
-    margin-bottom: 40px;
-  }
 `;
 const Title = styled.h1`
   color: #e53a40;
+
   @media ${device.mobileS} {
-    margin-left: 5px;
+    margin-left: 0;
   }
   @media ${device.mobileM} {
     margin-left: 0;
   }
   @media ${device.mobileL} {
     margin-left: 5px;
-  }
-  @media ${device.tablet} {
-    margin-left: 80px;
   }
 `;
 const WrapperProduct = styled.div`
@@ -104,7 +97,7 @@ const WrapperProduct = styled.div`
   margin-left: 150px;
   @media ${device.mobileS} {
     width: 100vh;
-    margin-left: 120px;
+    margin-left: 0px;
   }
   @media ${device.mobileL} {
     margin-left: 100px;

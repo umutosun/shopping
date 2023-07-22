@@ -77,9 +77,6 @@ const InputWrapper = styled.div`
   @media ${device.mobileL} {
     display: none;
   }
-  @media ${device.tablet} {
-    display: none;
-  }
 `;
 
 const Input = styled.input`
