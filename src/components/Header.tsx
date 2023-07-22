@@ -6,13 +6,12 @@ import { useEffect } from "react";
 
 function Header() {
   const navigate = useNavigate();
-  const dispatch = useAppDispatch();
   const { products } = useAppSelector((state) => state.basket);
   console.log(products, "carts");
 
   return (
     <div className="header">
-      <h1 onClick={() => navigate("/")}> Hepsi Orada</h1>
+      <h1 onClick={() => navigate("/")}> Umut's Market</h1>
       <div className="input">
         <input type="text" placeholder="Arama Yapınız..." />
         <div className="search">
@@ -22,7 +21,7 @@ function Header() {
 
       <div className="basket">
         <div className="count">{products?.length}</div>
-        <SlBasket size={50} onClick={() => navigate("cart")} />
+        <SlBasket size={55} onClick={() => navigate("cart")} />
       </div>
     </div>
   );

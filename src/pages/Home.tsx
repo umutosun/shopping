@@ -29,7 +29,7 @@ const Home = () => {
 
   return (
     <div className="product">
-      <div>
+      <div className="product-category">
         <h1>Kategori</h1>
         {category?.map((category, i) => (
           <Catagories
