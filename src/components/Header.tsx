@@ -29,7 +29,12 @@ function Header() {
         <BasketCount onClick={() => navigate("cart")}>
           {products?.length}
         </BasketCount>
-        <SlBasket size={55} color="#EFDC05" onClick={() => navigate("cart")} />
+        <SlBasket
+          className="slbasket"
+          size={55}
+          color="#EFDC05"
+          onClick={() => navigate("cart")}
+        />
       </Basket>
     </Wrapper>
   );
@@ -57,9 +62,13 @@ const Title = styled.h1`
   margin-top: 25px;
   cursor: pointer;
   margin-left: 15px;
-  height: 50px;
+  font-size: 50px;
+
   &:hover {
     color: #e53a40;
+  }
+  @media ${device.mobileS} {
+    font-size: 20px;
   }
 `;
 const InputWrapper = styled.div`
@@ -108,4 +117,9 @@ const BasketCount = styled.div`
   color: #fff;
   padding: 2px;
   cursor: pointer;
+  @media ${device.mobileS} {
+    margin-left: -186px;
+    width: 9px;
+    margin-top: -12px;
+  }
 `;

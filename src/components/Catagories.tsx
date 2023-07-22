@@ -33,7 +33,8 @@ const Category = styled.div`
   }
   @media ${device.mobileS} {
     gap: 2px;
-    padding: 3px;
+    margin-left: 2px;
+    padding: 0;
   }
   @media ${device.mobileM} {
     gap: 2px;

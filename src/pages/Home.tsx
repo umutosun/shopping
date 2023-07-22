@@ -62,9 +62,10 @@ const Category = styled.div`
   margin-left: 350px;
   margin-bottom: 15px;
   @media ${device.mobileS} {
-    gap: 2px;
-    margin-left: 2px;
+    gap: 5px;
+    margin-left: 20px;
     margin-bottom: 40px;
+    flex-direction: column;
   }
   @media ${device.mobileM} {
     gap: 2px;
@@ -82,6 +83,7 @@ const Title = styled.h1`
 
   @media ${device.mobileS} {
     margin-left: 0;
+    font-size: 15px;
   }
   @media ${device.mobileM} {
     margin-left: 0;

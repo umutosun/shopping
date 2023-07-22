@@ -4,6 +4,14 @@
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
+@media (max-width:320px){
+  .slbasket{
+    margin-left: -200px;
+    width:35px;
+    margin-top: -15px;
+    
+  }
+}
 .product_detail {
   display: flex;
 }
