@@ -9,6 +9,8 @@ import { getBasketTotal } from "../features/basketSlice";
 import Basket from "../components/Basket";
 import { Product } from "../types/product";
 
+import styled from "styled-components";
+
 function Cart() {
   const dispatch = useAppDispatch();
   const { products, totalAmount, itemCount } = useAppSelector(
@@ -35,9 +37,9 @@ function Cart() {
           {products.map((product: Product, i) => (
             <Basket key={i} product={product} />
           ))}
-          <div>
-            TOPLAM TUTAR: <span>{totalAmount} TL</span>
-          </div>
+          <TotalAmount>
+            TOPLAM TUTAR: <span>{totalAmount}$</span>
+          </TotalAmount>
         </div>
       ) : (
         <div>Sepete Ürün Eklemediniz</div>
@@ -47,3 +49,8 @@ function Cart() {
 }
 
 export default Cart;
+
+const TotalAmount = styled.div`
+  text-align: end;
+  margin-right: 55px;
+`;

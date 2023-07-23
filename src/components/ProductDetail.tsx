@@ -23,12 +23,12 @@ const ProductDetail = ({ detail }: props) => {
       <Image src={detail.image} alt="" />
 
       <Info>
-        <h1>{detail.title}</h1>
-        <p>{detail.description}</p>
-        <h4>Count: {detail?.rating?.count}</h4>
-        <h4>Rating: {detail?.rating?.rate}</h4>
-        <h3>Price: {detail.price}$</h3>
-        <button onClick={addBasket}>Add to Basket</button>
+        <Title>{detail.title}</Title>
+        <Description>{detail.description}</Description>
+        <Count>Count: {detail?.rating?.count}</Count>
+        <Rating>Rating: {detail?.rating?.rate}</Rating>
+        <Price>Price: {detail.price}$</Price>
+        <Button onClick={addBasket}>Add to Basket</Button>
       </Info>
     </WrapperProduct>
   );
@@ -42,10 +42,44 @@ const WrapperProduct = styled.div`
 
 const Image = styled.img`
   width: 300px;
-  margin-top: 100px;
-  margin-left: 100px;
+  margin: 90px;
 `;
 
 const Info = styled.div`
-  margin-top: 150px;
+  margin-top: 90px;
+  margin-left: -50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
+
+const Title = styled.h1`
+  font-size: 50px;
+`;
+
+const Description = styled.p``;
+
+const Count = styled.h4`
+  color: #e53a40;
+`;
+
+const Rating = styled.h4`
+  color: #e53a40;
+`;
+
+const Price = styled.h2`
+  color: #519d9e;
+`;
+
+const Button = styled.button`
+  width: 150px;
+  padding: 10px;
+  background-color: #e53a40;
+  border: 1px solid #e53a40;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    background-color: #519d9e;
+  }
 `;
