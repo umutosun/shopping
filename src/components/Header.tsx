@@ -4,7 +4,6 @@ import { ImSearch } from "react-icons/im";
 import { useNavigate } from "react-router-dom";
 
 import styled from "styled-components";
-import { device } from "../style/constants";
 
 import { useAppSelector } from "../store";
 
@@ -44,18 +43,9 @@ export default Header;
 
 const Wrapper = styled.div`
   background-color: #519d9e;
-  height: 100px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  @media ${device.mobileS} {
-    width: 100vh;
-  }
-  @media ${device.mobileM} {
-    width: 100vh;
-  }
-  @media ${device.mobileL} {
-    width: 100vh;
-  }
 `;
 const Title = styled.h1`
   color: #efdc05;
@@ -67,9 +57,6 @@ const Title = styled.h1`
   &:hover {
     color: #e53a40;
   }
-  @media ${device.mobileS} {
-    font-size: 20px;
-  }
 `;
 const InputWrapper = styled.div`
   width: 150px;
@@ -77,15 +64,6 @@ const InputWrapper = styled.div`
   margin-top: 40px;
   position: relative;
   margin-left: -500px;
-  @media ${device.mobileS} {
-    display: none;
-  }
-  @media ${device.mobileM} {
-    display: none;
-  }
-  @media ${device.mobileL} {
-    display: none;
-  }
 `;
 
 const Input = styled.input`
@@ -117,9 +95,4 @@ const BasketCount = styled.div`
   color: #fff;
   padding: 2px;
   cursor: pointer;
-  @media ${device.mobileS} {
-    margin-left: -186px;
-    width: 9px;
-    margin-top: -12px;
-  }
 `;

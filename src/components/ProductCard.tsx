@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { Product } from "../types/product";
 
 import styled from "styled-components";
-import { device } from "../style/constants";
 
 type props = {
   data: Product;
@@ -61,8 +60,6 @@ const Image = styled.img`
   &:hover {
     --_i: 100%;
     transition: 0.3s, background-size 0.3s 0.3s;
-  }
-  @media ${device.mobileS} {
   }
 `;
 const Price = styled.p`

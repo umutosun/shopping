@@ -3,29 +3,8 @@
   margin: 0;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
-
-@media (max-width:320px){
-  .slbasket{
-    margin-left: -200px;
-    width:35px;
-    margin-top: -15px;
-    
-  }
-}
-.product_detail {
-  display: flex;
-}
-.product_detail > img {
-  width: 300px;
-  margin-top: 100px;
-  margin-left: 100px;
-}
-.product_detail .product_description {
-  margin-top: 150px;
-}
-
 .basket > img {
   width: 100px;
   margin-left: 25px;
   margin-top: 50px;
-}/*# sourceMappingURL=App.css.map */
+}

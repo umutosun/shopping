@@ -2,7 +2,6 @@ import { useAppSelector } from "../store";
 import Loading from "./Loading";
 
 import styled from "styled-components";
-import { device } from "../style/constants";
 
 const Catagories = ({ category, setCategories }: any) => {
   const loading = useAppSelector((state) => state.category);
@@ -30,17 +29,5 @@ const Category = styled.div`
   &:hover {
     background-color: #e53a40;
     color: white;
-  }
-  @media ${device.mobileS} {
-    gap: 2px;
-    margin-left: 2px;
-    padding: 0;
-  }
-  @media ${device.mobileM} {
-    gap: 2px;
-    padding: 3px;
-  }
-  @media ${device.mobileL} {
-    padding: 5px;
   }
 `;
