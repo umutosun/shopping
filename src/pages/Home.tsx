@@ -17,7 +17,7 @@ const Home = () => {
 
   const { data } = useAppSelector((state) => state.product);
   const { category } = useAppSelector((state) => state.category);
-
+  const [search, setSearch] = useState(data);
   useEffect(() => {
     dispatch(getCategories());
   }, [dispatch]);
@@ -30,8 +30,21 @@ const Home = () => {
     }
   }, [dispatch, categories]);
 
+  useEffect(() => {
+    setSearch(data);
+  }, [data]);
   return (
     <Wrapper>
+      <Input
+        type="text"
+        placeholder="Arama yapınız..."
+        onChange={(e) => {
+          let product = data.filter((item) =>
+            item.title.toLowerCase().includes(e.target.value.toLowerCase())
+          );
+          setSearch(product);
+        }}
+      />
       <Category>
         <Title>Kategori</Title>
         {category?.map((category, i) => (
@@ -43,7 +56,7 @@ const Home = () => {
         ))}
       </Category>
       <WrapperProduct>
-        {data && data?.map((data, i) => <ProductCard key={i} data={data} />)}
+        {data && search.map((data, i) => <ProductCard key={i} data={data} />)}
       </WrapperProduct>
     </Wrapper>
   );
@@ -69,4 +82,14 @@ const WrapperProduct = styled.div`
   flex-wrap: wrap;
   gap: 25px;
   margin-left: 150px;
+`;
+const Input = styled.input`
+  position: absolute;
+  margin-top: -95px;
+  margin-left: 450px;
+  height: 35px;
+  width: 500px;
+  border-radius: 5px;
+  border: 0;
+  background-color: rgb(250, 240, 241);
 `;

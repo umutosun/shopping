@@ -1,7 +1,5 @@
 import { useEffect } from "react";
 
-import { useNavigate } from "react-router-dom";
-
 import { useAppDispatch, useAppSelector } from "../store";
 
 import { getBasketTotal } from "../features/basketSlice";

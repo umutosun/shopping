@@ -9,6 +9,7 @@ type props = {
 };
 const ProductCard = ({ data }: props) => {
   const navigate = useNavigate();
+
   return (
     <Wrapper onClick={() => navigate(`prodcuts/${data?.id}`)}>
       <Price className="price">{data.price}$</Price>
@@ -19,7 +20,6 @@ const ProductCard = ({ data }: props) => {
 };
 
 export default ProductCard;
-
 const Wrapper = styled.div`
   border: 3px solid #30a9de;
   border-radius: 8px;

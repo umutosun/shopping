@@ -11,19 +11,11 @@ function Header() {
   const navigate = useNavigate();
 
   const { products } = useAppSelector((state) => state.basket);
-
   console.log(products, "carts");
 
   return (
     <Wrapper>
       <Title onClick={() => navigate("/")}> Umut's Market</Title>
-      <InputWrapper>
-        <Input type="text" placeholder="Arama Yapınız..." />
-        <Search>
-          <ImSearch size={25} />
-        </Search>
-      </InputWrapper>
-
       <Basket>
         <BasketCount onClick={() => navigate("cart")}>
           {products?.length}
@@ -57,27 +49,6 @@ const Title = styled.h1`
   &:hover {
     color: #e53a40;
   }
-`;
-const InputWrapper = styled.div`
-  width: 150px;
-  height: 50px;
-  margin-top: 40px;
-  position: relative;
-  margin-left: -500px;
-`;
-
-const Input = styled.input`
-  height: 35px;
-  width: 500px;
-  border-radius: 5px;
-  border: 0;
-  background-color: rgb(250, 240, 241);
-`;
-
-const Search = styled.div`
-  position: absolute;
-  margin-top: -30px;
-  margin-left: 470px;
 `;
 
 const Basket = styled.div`
