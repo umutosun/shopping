@@ -40,7 +40,7 @@ const Basket = ({ product }: any) => {
               <ButtonIncrement onClick={increment}>+</ButtonIncrement>
             </Button>
             <Price>{product.price * product.quantity}$</Price>
-            <ButtonRemove onClick={remove}>Ürünü Sil</ButtonRemove>
+            <ButtonRemove onClick={remove}>Remove Product</ButtonRemove>
           </Sale>
         </WrapperBasket>
       }
@@ -80,7 +80,7 @@ const Title = styled.h2`
   width: 900px;
   @media ${device.mobileM} {
     font-size: 15px;
-    margin-left: 550px;
+    width: 300px;
   }
   @media ${device.tablet} {
     font-size: 30px;
@@ -149,7 +149,7 @@ const ButtonIncrement = styled.p`
 
 const ButtonRemove = styled.button`
   height: 40px;
-  width: 100px;
+  width: 130px;
   border-radius: 12px;
   border: 0;
   cursor: pointer;

@@ -101,6 +101,7 @@ const WrapperProduct = styled.div`
   flex-wrap: wrap;
   gap: 25px;
   margin-left: 150px;
+  margin-bottom: 50px;
   @media ${device.mobileM} {
     margin-left: 45px;
   }

@@ -38,7 +38,7 @@ function Cart() {
             <Basket key={i} product={product} />
           ))}
           <TotalAmount>
-            TOPLAM TUTAR: <span>{totalAmount}$</span>
+            Total Amount: <span>{totalAmount}$</span>
           </TotalAmount>
         </div>
       ) : (
@@ -54,9 +54,10 @@ const TotalAmount = styled.div`
   text-align: end;
   margin-right: 55px;
   @media ${device.mobileM} {
-    margin-right: 95px;
+    text-align: center;
+    margin-bottom: 30px;
   }
   @media ${device.tablet} {
-    margin-right: 55px;
+    font-size: 30px;
   }
 `;

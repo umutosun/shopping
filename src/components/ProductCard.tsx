@@ -21,7 +21,7 @@ const ProductCard = ({ data }: props) => {
 
 export default ProductCard;
 const Wrapper = styled.div`
-  border: 3px solid #1b1f1f;
+  border: 3px solid #b5caca;
   border-radius: 8px;
   box-shadow: 10px 10px gray;
   width: 250px;
@@ -34,6 +34,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding-top: 15px;
+  margin-bottom: 15px;
 `;
 const Image = styled.img`
   width: 50%;
@@ -43,7 +44,7 @@ const Image = styled.img`
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
-  --c: #1b1f1f; /* the border color */
+  --c: #697979; /* the border color */
   --b: 5px; /* the border thickness*/
   --g: 3px; /* the gap on hover */
   padding: calc(var(--g) + var(--b));

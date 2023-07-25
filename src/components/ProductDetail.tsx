@@ -100,18 +100,21 @@ const Rating = styled.h4`
 `;
 
 const Price = styled.h2`
-  color: #519d9e;
+  color: #285b5c;
 `;
 
 const Button = styled.button`
   width: 150px;
   padding: 10px;
   background-color: #e53a40;
-  border: 1px solid #e53a40;
+  border: 0px solid #e53a40;
   border-radius: 15px;
   color: white;
   cursor: pointer;
   &:hover {
-    background-color: #519d9e;
+    background-color: #285b5c;
+  }
+  @media ${device.mobileM} {
+    margin-bottom: 25px;
   }
 `;

@@ -23,7 +23,7 @@ export default Catagories;
 const Category = styled.div`
   cursor: pointer;
   margin-left: 15px;
-  border: 1px solid #1b1f1f;
+  border: 1px solid #b5caca;
   padding: 10px;
   margin-top: 5px;
   &:hover {
