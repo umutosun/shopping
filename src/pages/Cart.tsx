@@ -8,9 +8,11 @@ import Basket from "../components/Basket";
 import { Product } from "../types/product";
 
 import styled from "styled-components";
+import { device } from "../style/device";
 
 function Cart() {
   const dispatch = useAppDispatch();
+
   const { products, totalAmount, itemCount } = useAppSelector(
     (state) => state.basket
   );
@@ -51,4 +53,10 @@ export default Cart;
 const TotalAmount = styled.div`
   text-align: end;
   margin-right: 55px;
+  @media ${device.mobileM} {
+    margin-right: 95px;
+  }
+  @media ${device.tablet} {
+    margin-right: 55px;
+  }
 `;

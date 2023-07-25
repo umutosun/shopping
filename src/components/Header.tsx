@@ -1,9 +1,9 @@
 import { SlBasket } from "react-icons/sl";
-import { ImSearch } from "react-icons/im";
 
 import { useNavigate } from "react-router-dom";
 
 import styled from "styled-components";
+import { device } from "../style/device";
 
 import { useAppSelector } from "../store";
 
@@ -16,14 +16,15 @@ function Header() {
   return (
     <Wrapper>
       <Title onClick={() => navigate("/")}> Umut's Market</Title>
+
       <Basket>
         <BasketCount onClick={() => navigate("cart")}>
           {products?.length}
         </BasketCount>
         <SlBasket
-          className="slbasket"
           size={55}
-          color="#EFDC05"
+          className="slbasket"
+          color="#ffff"
           onClick={() => navigate("cart")}
         />
       </Basket>
@@ -34,27 +35,53 @@ function Header() {
 export default Header;
 
 const Wrapper = styled.div`
-  background-color: #519d9e;
+  background-color: #1b1f1f;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  height: 108px;
+  @media ${device.mobileM} {
+    width: 100%;
+  }
 `;
 const Title = styled.h1`
-  color: #efdc05;
+  color: #fff;
   margin-top: 25px;
   cursor: pointer;
   margin-left: 15px;
   font-size: 50px;
-
+  @media ${device.mobileM} {
+    font-size: 25px;
+  }
+  @media ${device.tablet} {
+    font-size: 40px;
+  }
+  @media ${device.laptop} {
+    font-size: 50px;
+  }
   &:hover {
     color: #e53a40;
   }
+  @media ${device.laptopL} {
+    margin-left: 50px;
+  }
 `;
-
 const Basket = styled.div`
-  padding: 25px;
-  position: relative;
-  cursor: pointer;
+  @media ${device.mobileM} {
+    margin-left: 0;
+    margin-right: 15px;
+    margin-top: 10px;
+  }
+  @media ${device.tablet} {
+    margin-top: 20px;
+  }
+  @media ${device.laptop} {
+    margin-top: 30px;
+    margin-right: 40px;
+  }
+  @media ${device.laptopL} {
+    margin-right: 50px;
+  }
 `;
 const BasketCount = styled.div`
   position: absolute;
@@ -66,4 +93,7 @@ const BasketCount = styled.div`
   color: #fff;
   padding: 2px;
   cursor: pointer;
+  @media ${device.mobileM} {
+    margin-left: 25px;
+  }
 `;
