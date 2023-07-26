@@ -31,6 +31,7 @@ const basketSlice = createSlice({
           { ...action.payload, quantity: 1 },
         ];
       }
+      storeInLocalStorage(state.products);
     },
     icreaseBasketItem: (state, action) => {
       state.products = state.products.map((basketItem) =>

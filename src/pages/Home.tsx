@@ -20,8 +20,12 @@ const Home = () => {
   const [search, setSearch] = useState(data);
   useEffect(() => {
     dispatch(getCategories());
+    console.log(dispatch(getCategories()));
   }, [dispatch]);
 
+  const all = () => {
+    dispatch(fetchProduct());
+  };
   useEffect(() => {
     if (categories) {
       dispatch(fetchCategoryProduct(categories));
@@ -47,6 +51,7 @@ const Home = () => {
       />
       <Category>
         <Title>Kategori</Title>
+        <All onClick={all}>All</All>
         {category?.map((category, i) => (
           <Catagories
             key={i}
@@ -82,6 +87,21 @@ const Category = styled.div`
   @media ${device.tablet} {
     flex-direction: row;
     gap: 10px;
+  }
+`;
+const All = styled.div`
+  cursor: pointer;
+  margin-left: 15px;
+  border: 1px solid #b5caca;
+  padding: 10px;
+  margin-top: 5px;
+  &:hover {
+    background-color: #1b1f1f;
+    color: white;
+  }
+  @media ${device.mobileM} {
+    margin-left: 15px;
+    margin-right: 15px;
   }
 `;
 const Title = styled.h1`

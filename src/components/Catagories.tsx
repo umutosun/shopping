@@ -7,7 +7,7 @@ const Catagories = ({ category, setCategories }: any) => {
   const loading = useAppSelector((state) => state.category);
   return (
     <div>
-      {loading.loading == false ? (
+      {loading.loading === false ? (
         <Loading />
       ) : (
         <Category onClick={() => setCategories(category)}>

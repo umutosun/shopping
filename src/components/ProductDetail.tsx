@@ -6,6 +6,7 @@ import { addBasketItem } from "../features/basketSlice";
 
 import styled from "styled-components";
 import { device } from "../style/device";
+import { NotificationManager } from "react-notifications";
 
 type props = {
   detail: Product;
@@ -16,8 +17,8 @@ const ProductDetail = ({ detail }: props) => {
 
   const addBasket = () => {
     dispatch(addBasketItem(detail));
+    NotificationManager.info("Product added to cart", "", 3000);
   };
-  console.log();
 
   return (
     <WrapperProduct>
