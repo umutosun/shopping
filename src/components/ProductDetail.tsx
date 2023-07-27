@@ -14,7 +14,6 @@ type props = {
 
 const ProductDetail = ({ detail }: props) => {
   const dispatch = useAppDispatch();
-
   const addBasket = () => {
     dispatch(addBasketItem(detail));
     NotificationManager.info("Product added to cart", "", 3000);
@@ -23,7 +22,6 @@ const ProductDetail = ({ detail }: props) => {
   return (
     <WrapperProduct>
       <Image src={detail.image} alt="" />
-
       <Info>
         <Title>{detail.title}</Title>
         <Description>{detail.description}</Description>
