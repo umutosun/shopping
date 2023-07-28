@@ -54,9 +54,9 @@ const basketSlice = createSlice({
           : basketItem
       );
     },
-    deleteBasketItem: (state, action: PayloadAction<Product>) => {
+    deleteBasketItem: (state, action: PayloadAction<Number>) => {
       const tempCart = state.products.filter(
-        (item: any) => item.id !== action.payload
+        (item: Product) => item.id !== action.payload
       );
       state.products = tempCart;
       storeInLocalStorage(state.products);

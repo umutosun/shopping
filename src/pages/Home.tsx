@@ -23,6 +23,7 @@ const Home = () => {
   const { category } = useAppSelector((state) => state.category);
 
   const [search, setSearch] = useState(data);
+  const loading = useAppSelector((state) => state.product.loading);
 
   useEffect(() => {
     dispatch(getCategories());
@@ -30,7 +31,6 @@ const Home = () => {
 
   const all = () => {
     setCategories("");
-    dispatch(fetchProduct());
   };
 
   useEffect(() => {
@@ -44,6 +44,9 @@ const Home = () => {
   useEffect(() => {
     setSearch(data);
   }, [data]);
+  if (loading) {
+    return <h1>Loading...</h1>;
+  }
 
   return (
     <Wrapper>

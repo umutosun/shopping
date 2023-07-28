@@ -1,8 +1,8 @@
-import { useAppDispatch } from "../store";
+import { useAppDispatch, useAppSelector } from "../store";
 
 import { Product } from "../types/product";
 
-import { addBasketItem } from "../features/basketSlice";
+import { addBasketItem, deleteBasketItem } from "../features/basketSlice";
 
 import { device } from "../style/device";
 
@@ -16,11 +16,16 @@ type props = {
 
 const ProductDetail = ({ detail }: props) => {
   const dispatch = useAppDispatch();
+  const basketItems = useAppSelector((state) => state.basket.products);
   const addBasket = () => {
     dispatch(addBasketItem(detail));
     NotificationManager.info("Product added to cart", "", 3000);
   };
-
+  const removeBasket = () => {
+    const productToDelete = detail.id;
+    dispatch(deleteBasketItem(productToDelete));
+    NotificationManager.info("Product removed from cart", "", 3000);
+  };
   return (
     <WrapperProduct>
       <Image src={detail.image} alt="" />
@@ -30,7 +35,16 @@ const ProductDetail = ({ detail }: props) => {
         <Count>Count: {detail?.rating?.count}</Count>
         <Rating>Rating: {detail?.rating?.rate}</Rating>
         <Price>Price: {detail.price}$</Price>
-        <Button onClick={addBasket}>Add to Basket</Button>
+        <Button
+          onClick={
+            basketItems.some((item) => item.id === detail.id)
+              ? removeBasket
+              : addBasket
+          }>
+          {basketItems.some((item) => item.id === detail.id)
+            ? "Remove from Basket"
+            : "Add to Basket"}
+        </Button>
       </Info>
     </WrapperProduct>
   );
