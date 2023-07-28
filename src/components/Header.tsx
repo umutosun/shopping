@@ -67,6 +67,7 @@ const Title = styled.h1`
   }
 `;
 const Basket = styled.div`
+  cursor: pointer;
   @media ${device.mobileM} {
     margin-left: 0;
     margin-right: 15px;

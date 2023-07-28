@@ -134,6 +134,7 @@ const ButtonDecrement = styled.p`
   text-align: center;
   font-size: 20px;
   font-weight: 600;
+  cursor: pointer;
 `;
 
 const Quantity = styled.p`
@@ -145,6 +146,7 @@ const ButtonIncrement = styled.p`
   text-align: center;
   font-size: 20px;
   font-weight: 600;
+  cursor: pointer;
 `;
 
 const ButtonRemove = styled.button`

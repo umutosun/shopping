@@ -53,6 +53,7 @@ const productSlice = createSlice({
         fetchProduct.fulfilled,
         (state, action: PayloadAction<Product[]>) => {
           state.data = action.payload;
+          state.loading = false;
         }
       )
       .addCase(fetchProduct.pending, (state) => {
@@ -67,6 +68,7 @@ const productSlice = createSlice({
         fetchCategoryProduct.fulfilled,
         (state, action: PayloadAction<Product[]>) => {
           state.data = action.payload;
+          state.loading = false;
         }
       )
       .addCase(fetchCategoryProduct.pending, (state) => {

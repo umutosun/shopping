@@ -20,10 +20,10 @@ const Home = () => {
   const [search, setSearch] = useState(data);
   useEffect(() => {
     dispatch(getCategories());
-    console.log(dispatch(getCategories()));
   }, [dispatch]);
 
   const all = () => {
+    setCategories("");
     dispatch(fetchProduct());
   };
   useEffect(() => {
@@ -37,6 +37,7 @@ const Home = () => {
   useEffect(() => {
     setSearch(data);
   }, [data]);
+
   return (
     <Wrapper>
       <Input

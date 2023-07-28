@@ -1,25 +1,18 @@
-import { useAppSelector } from "../store";
-import Loading from "./Loading";
-
 import styled from "styled-components";
 import { device } from "../style/device";
 const Catagories = ({ category, setCategories }: any) => {
-  const loading = useAppSelector((state) => state.category);
   return (
     <div>
-      {loading.loading === false ? (
-        <Loading />
-      ) : (
+      <div>
         <Category onClick={() => setCategories(category)}>
           <h4>{category}</h4>
         </Category>
-      )}
+      </div>
     </div>
   );
 };
 
 export default Catagories;
-
 const Category = styled.div`
   cursor: pointer;
   margin-left: 15px;
