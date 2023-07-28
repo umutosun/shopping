@@ -1,4 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
+
 import { useDispatch, TypedUseSelectorHook, useSelector } from "react-redux";
 
 import productSlice from "../features/productSlice";

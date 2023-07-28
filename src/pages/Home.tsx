@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-
 import { useAppDispatch, useAppSelector } from "../store";
 
 import { fetchCategoryProduct, fetchProduct } from "../features/productSlice";
@@ -7,17 +5,25 @@ import { fetchCategoryProduct, fetchProduct } from "../features/productSlice";
 import ProductCard from "../components/ProductCard";
 import Catagories from "../components/Catagories";
 
-import styled from "styled-components";
-import { device } from "../style/device";
 import { getCategories } from "../features/categorySlice";
+
+import { device } from "../style/device";
+
+import styled from "styled-components";
+
+import { useEffect, useState } from "react";
 
 const Home = () => {
   const [categories, setCategories] = useState<string>("");
+
   const dispatch = useAppDispatch();
 
   const { data } = useAppSelector((state) => state.product);
+
   const { category } = useAppSelector((state) => state.category);
+
   const [search, setSearch] = useState(data);
+
   useEffect(() => {
     dispatch(getCategories());
   }, [dispatch]);
@@ -26,6 +32,7 @@ const Home = () => {
     setCategories("");
     dispatch(fetchProduct());
   };
+
   useEffect(() => {
     if (categories) {
       dispatch(fetchCategoryProduct(categories));
@@ -74,6 +81,7 @@ const Wrapper = styled.div`
   gap: 20px;
   margin-top: 30px;
 `;
+
 const Category = styled.div`
   display: flex;
   gap: 15px;
@@ -90,6 +98,7 @@ const Category = styled.div`
     gap: 10px;
   }
 `;
+
 const All = styled.div`
   cursor: pointer;
   margin-left: 15px;
@@ -105,6 +114,7 @@ const All = styled.div`
     margin-right: 15px;
   }
 `;
+
 const Title = styled.h1`
   color: #e53a40;
   @media ${device.mobileM} {
@@ -117,6 +127,7 @@ const Title = styled.h1`
     margin-left: 400px;
   }
 `;
+
 const WrapperProduct = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -138,6 +149,7 @@ const WrapperProduct = styled.div`
     margin-left: 150px;
   }
 `;
+
 const Input = styled.input`
   position: absolute;
   margin-top: -95px;

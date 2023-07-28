@@ -1,15 +1,20 @@
 import { useParams } from "react-router-dom";
-import { useAppDispatch, useAppSelector } from "../store";
 import { useEffect } from "react";
+
+import { useAppDispatch, useAppSelector } from "../store";
+
 import {
   fetchDetailProduct,
   resetDetailProduct,
 } from "../features/productSlice";
+
 import ProductDetail from "../components/ProductDetail";
 
 const Detail = () => {
   const { id } = useParams();
+
   const dispatch = useAppDispatch();
+
   const { detail, loading }: any = useAppSelector((state) => state.product);
   useEffect(() => {
     if (id) {
@@ -29,6 +34,7 @@ const Detail = () => {
       </div>
     );
   }
+
   return (
     <div>
       <ProductDetail detail={detail} />

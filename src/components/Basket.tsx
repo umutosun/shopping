@@ -1,5 +1,7 @@
 import { useAppDispatch } from "../store";
 
+import { device } from "../style/device";
+
 import {
   getBasketTotal,
   decreaseBasketItem,
@@ -8,7 +10,6 @@ import {
 } from "../features/basketSlice";
 
 import styled from "styled-components";
-import { device } from "../style/device";
 
 const Basket = ({ product }: any) => {
   const dispatch = useAppDispatch();

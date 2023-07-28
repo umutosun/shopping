@@ -1,5 +1,7 @@
 import styled from "styled-components";
+
 import { device } from "../style/device";
+
 const Catagories = ({ category, setCategories }: any) => {
   return (
     <div>
@@ -13,6 +15,7 @@ const Catagories = ({ category, setCategories }: any) => {
 };
 
 export default Catagories;
+
 const Category = styled.div`
   cursor: pointer;
   margin-left: 15px;

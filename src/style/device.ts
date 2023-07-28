@@ -7,6 +7,7 @@ interface Size {
   laptopL: string;
   desktop: string;
 }
+
 const size: Size = {
   mobileS: "320px",
   mobileM: "360px",
@@ -16,6 +17,7 @@ const size: Size = {
   laptopL: "1440px",
   desktop: "2560px",
 };
+
 export const device = {
   mobileS: `(min-width: ${size.mobileS})`,
   mobileM: `(min-width: ${size.mobileM})`,

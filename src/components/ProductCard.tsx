@@ -1,9 +1,10 @@
-import { useNavigate } from "react-router-dom";
+import { useAppSelector } from "../store";
 
 import { Product } from "../types/product";
 
+import { useNavigate } from "react-router-dom";
+
 import styled from "styled-components";
-import { useAppSelector } from "../store";
 
 type props = {
   data: Product;
@@ -11,9 +12,11 @@ type props = {
 const ProductCard = ({ data }: props) => {
   const navigate = useNavigate();
   const loading = useAppSelector((state) => state.product.loading);
+
   if (loading) {
     return <p>Loading...</p>;
   }
+
   return (
     <Wrapper onClick={() => navigate(`prodcuts/${data?.id}`)}>
       <Price className="price">{data.price}$</Price>

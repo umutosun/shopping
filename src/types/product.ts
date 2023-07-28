@@ -11,6 +11,7 @@ export interface Product {
   title: string;
   quantity: number;
 }
+
 export interface ProductState {
   data: Product[];
   basket: Product[];
@@ -18,11 +19,13 @@ export interface ProductState {
   error: string;
   detail: Product[];
 }
+
 export interface Category {
   category: [];
   loading: boolean;
   error: string;
 }
+
 export interface BasketState {
   products: Product[];
   itemCount: number;

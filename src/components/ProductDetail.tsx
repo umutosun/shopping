@@ -4,8 +4,10 @@ import { Product } from "../types/product";
 
 import { addBasketItem } from "../features/basketSlice";
 
-import styled from "styled-components";
 import { device } from "../style/device";
+
+import styled from "styled-components";
+
 import { NotificationManager } from "react-notifications";
 
 type props = {

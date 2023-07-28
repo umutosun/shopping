@@ -1,22 +1,21 @@
+import { device } from "../style/device";
+
+import { useAppSelector } from "../store";
+
 import { SlBasket } from "react-icons/sl";
 
 import { useNavigate } from "react-router-dom";
 
 import styled from "styled-components";
-import { device } from "../style/device";
-
-import { useAppSelector } from "../store";
 
 function Header() {
   const navigate = useNavigate();
 
   const { products } = useAppSelector((state) => state.basket);
-  console.log(products, "carts");
 
   return (
     <Wrapper>
       <Title onClick={() => navigate("/")}> Umut's Market</Title>
-
       <Basket>
         <BasketCount onClick={() => navigate("cart")}>
           {products?.length}
@@ -44,6 +43,7 @@ const Wrapper = styled.div`
     width: 100%;
   }
 `;
+
 const Title = styled.h1`
   color: #fff;
   margin-top: 25px;
@@ -66,6 +66,7 @@ const Title = styled.h1`
     margin-left: 50px;
   }
 `;
+
 const Basket = styled.div`
   cursor: pointer;
   @media ${device.mobileM} {
@@ -84,6 +85,7 @@ const Basket = styled.div`
     margin-right: 50px;
   }
 `;
+
 const BasketCount = styled.div`
   position: absolute;
   margin-left: 27px;

@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+
 import { BasketState, Product } from "../types/product";
 
 const storeInLocalStorage = (data: any) => {
