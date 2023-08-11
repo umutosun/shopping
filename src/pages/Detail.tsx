@@ -8,7 +8,7 @@ import {
   resetDetailProduct,
 } from "../features/productSlice";
 
-import ProductDetail from "../components/ProductDetail";
+import ProductDetail from "../components/ProductDetail/ProductDetail";
 
 const Detail = () => {
   const { id } = useParams();

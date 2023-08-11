@@ -1,31 +1,6 @@
-import { Product } from "../types/product";
-
-import { useNavigate } from "react-router-dom";
-
 import styled from "styled-components";
-import rate from "../assets/rate.png";
-type props = {
-  data: Product;
-};
-const ProductCard = ({ data }: props) => {
-  const navigate = useNavigate();
 
-  return (
-    <Wrapper onClick={() => navigate(`prodcuts/${data?.id}`)}>
-      <Image src={data.image} alt="" />
-      <Title>{data.title}</Title>
-
-      <Info>
-        <Rate src={rate}></Rate>
-        <Price className="price">{data.price}$</Price>
-      </Info>
-    </Wrapper>
-  );
-};
-
-export default ProductCard;
-
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   border: 1px solid #b5caca;
   border-radius: 8px;
   box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
@@ -41,7 +16,7 @@ const Wrapper = styled.div`
   margin-bottom: 80px;
 `;
 
-const Image = styled.img`
+export const Image = styled.img`
   width: 50%;
   display: block;
   margin-top: auto;
@@ -67,9 +42,9 @@ const Image = styled.img`
     transition: 0.3s, background-size 0.3s 0.3s;
   }
 `;
-const Info = styled.div``;
+export const Info = styled.div``;
 
-const Price = styled.p`
+export const Price = styled.p`
   position: absolute;
   padding: 5px;
   color: var(--primary-blue, #40bfff);
@@ -83,7 +58,7 @@ const Price = styled.p`
   margin-left: 85px;
 `;
 
-const Title = styled.p`
+export const Title = styled.p`
   color: var(--neutral-dark, #223263);
   font-family: Poppins;
   text-align: center;
@@ -93,7 +68,7 @@ const Title = styled.p`
   line-height: 150%; /* 27px */
   letter-spacing: 0.5px;
 `;
-const Rate = styled.img`
+export const Rate = styled.img`
   position: absolute;
   margin-left: 60px;
   margin-top: 10px;
