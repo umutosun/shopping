@@ -4,7 +4,7 @@ import { useAppDispatch, useAppSelector } from "../store";
 
 import { getBasketTotal } from "../features/basketSlice";
 
-import Basket from "../components/Basket";
+import Basket from "../components/Basket/Basket";
 import { Product } from "../types/product";
 
 import styled from "styled-components";

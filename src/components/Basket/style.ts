@@ -1,57 +1,7 @@
-import { useAppDispatch } from "../store";
-
-import { device } from "../style/device";
-
-import {
-  getBasketTotal,
-  decreaseBasketItem,
-  deleteBasketItem,
-  icreaseBasketItem,
-} from "../features/basketSlice";
-
 import styled from "styled-components";
+import { device } from "../../style/device";
 
-const Basket = ({ product }: any) => {
-  const dispatch = useAppDispatch();
-
-  const increment = () => {
-    dispatch(icreaseBasketItem({ id: product.id }));
-    dispatch(getBasketTotal());
-  };
-
-  const decrement = () => {
-    dispatch(decreaseBasketItem({ id: product.id }));
-    dispatch(getBasketTotal());
-  };
-
-  const remove = () => {
-    dispatch(deleteBasketItem(product.id));
-    dispatch(getBasketTotal());
-  };
-  return (
-    <div>
-      {
-        <WrapperBasket>
-          <Image src={product.image} alt="" />
-          <Title>{product.title}</Title>
-          <Sale>
-            <Button>
-              <ButtonDecrement onClick={decrement}>-</ButtonDecrement>
-              <Quantity>{product.quantity}</Quantity>
-              <ButtonIncrement onClick={increment}>+</ButtonIncrement>
-            </Button>
-            <Price>{product.price * product.quantity}$</Price>
-            <ButtonRemove onClick={remove}>Remove Product</ButtonRemove>
-          </Sale>
-        </WrapperBasket>
-      }
-    </div>
-  );
-};
-
-export default Basket;
-
-const WrapperBasket = styled.div`
+export const WrapperBasket = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 55px;
@@ -67,7 +17,7 @@ const WrapperBasket = styled.div`
   }
 `;
 
-const Image = styled.img`
+export const Image = styled.img`
   width: 100px;
   margin-right: 10px;
   @media ${device.mobileM} {
@@ -77,7 +27,7 @@ const Image = styled.img`
     width: 100px;
   }
 `;
-const Title = styled.h2`
+export const Title = styled.h2`
   width: 900px;
   @media ${device.mobileM} {
     font-size: 15px;
@@ -88,7 +38,7 @@ const Title = styled.h2`
     margin-left: 0;
   }
 `;
-const Sale = styled.div`
+export const Sale = styled.div`
   @media ${device.mobileM} {
     display: flex;
     flex-direction: column;
@@ -102,7 +52,7 @@ const Sale = styled.div`
     margin-top: 0;
   }
 `;
-const Price = styled.p`
+export const Price = styled.p`
   width: 50px;
   font-size: 25px;
   margin-right: 30px;
@@ -117,7 +67,7 @@ const Price = styled.p`
   }
 `;
 
-const Button = styled.button`
+export const Button = styled.button`
   display: flex;
   background-color: white;
   border: 1px solid gray;
@@ -130,7 +80,7 @@ const Button = styled.button`
   border: 1px solid gray;
 `;
 
-const ButtonDecrement = styled.p`
+export const ButtonDecrement = styled.p`
   width: 100%;
   text-align: center;
   font-size: 20px;
@@ -138,19 +88,18 @@ const ButtonDecrement = styled.p`
   cursor: pointer;
 `;
 
-const Quantity = styled.p`
+export const Quantity = styled.p`
   font-size: 25px;
 `;
 
-const ButtonIncrement = styled.p`
+export const ButtonIncrement = styled.p`
   width: 100%;
   text-align: center;
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
 `;
-
-const ButtonRemove = styled.button`
+export const ButtonRemove = styled.button`
   height: 40px;
   width: 130px;
   border-radius: 12px;

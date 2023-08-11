@@ -3,7 +3,7 @@ import { Product } from "../types/product";
 import { useNavigate } from "react-router-dom";
 
 import styled from "styled-components";
-
+import rate from "../assets/rate.png";
 type props = {
   data: Product;
 };
@@ -12,20 +12,24 @@ const ProductCard = ({ data }: props) => {
 
   return (
     <Wrapper onClick={() => navigate(`prodcuts/${data?.id}`)}>
-      <Price className="price">{data.price}$</Price>
       <Image src={data.image} alt="" />
       <Title>{data.title}</Title>
+
+      <Info>
+        <Rate src={rate}></Rate>
+        <Price className="price">{data.price}$</Price>
+      </Info>
     </Wrapper>
   );
 };
 
 export default ProductCard;
+
 const Wrapper = styled.div`
-  border: 3px solid #b5caca;
+  border: 1px solid #b5caca;
   border-radius: 8px;
-  box-shadow: 10px 10px gray;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
   width: 250px;
-  margin-bottom: 5px;
   margin-top: 5px;
   position: relative;
   left: 5px;
@@ -34,17 +38,17 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 80px;
 `;
+
 const Image = styled.img`
   width: 50%;
-  padding: 15px;
   display: block;
   margin-top: auto;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
-  --c: #697979; /* the border color */
+  --c: #40bfff; /* the border color */
   --b: 5px; /* the border thickness*/
   --g: 3px; /* the gap on hover */
   padding: calc(var(--g) + var(--b));
@@ -63,18 +67,34 @@ const Image = styled.img`
     transition: 0.3s, background-size 0.3s 0.3s;
   }
 `;
+const Info = styled.div``;
+
 const Price = styled.p`
   position: absolute;
-  right: 0;
-  background-color: black;
-  color: white;
-  top: 2px;
   padding: 5px;
+  color: var(--primary-blue, #40bfff);
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 180%; /* 32.4px */
+  letter-spacing: 0.5px;
+  margin-top: 25px;
+  margin-left: 85px;
 `;
 
 const Title = styled.p`
-  font-size: 15px;
+  color: var(--neutral-dark, #223263);
+  font-family: Poppins;
   text-align: center;
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.5px;
+`;
+const Rate = styled.img`
+  position: absolute;
+  margin-left: 60px;
+  margin-top: 10px;
 `;
