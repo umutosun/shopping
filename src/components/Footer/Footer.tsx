@@ -174,6 +174,7 @@ const InfoThree = styled.p`
   font-weight: 400;
   line-height: normal;
   margin-top: 19px;
+  font-family: "proxima-nova", sans-serif;
 `;
 
 const About = styled.div`
