@@ -1,17 +1,28 @@
 import styled from "styled-components";
+import { device } from "../../style/device";
 
 export const Wrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
   height: 165px;
+  @media ${device.mobileM} {
+  }
 `;
+
 export const Icon = styled.img`
   width: 44px;
   height: 44px;
   margin-top: 45px;
   margin-left: 102px;
+  @media ${device.mobileM} {
+    margin-left: 2px;
+  }
+  @media ${device.tablet} {
+    margin-left: 102px;
+  }
 `;
+
 export const Title = styled.p`
   color: #22262a;
   cursor: pointer;
@@ -21,6 +32,18 @@ export const Title = styled.p`
   line-height: normal;
   margin-right: 240px;
   margin-top: 54px;
+  @media ${device.mobileM} {
+    margin-left: 5px;
+    margin-top: 45px;
+    font-size: 15px;
+    margin-right: 50px;
+  }
+  @media ${device.tablet} {
+    margin-left: 0;
+    margin-top: 54px;
+    font-size: 18px;
+    margin-right: 240px;
+  }
 `;
 export const Category = styled.div`
   display: flex;
@@ -31,6 +54,12 @@ export const Category = styled.div`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  @media ${device.mobileM} {
+    gap: 45px;
+  }
+  @media ${device.tablet} {
+    gap: 82px;
+  }
 `;
 export const Electronics = styled.p`
   cursor: pointer;
