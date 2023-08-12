@@ -6,7 +6,7 @@ export const Image = styled.img`
   width: 100%;
   height: 653.734px;
   @media ${device.mobileM} {
-    width: 100vh;
+    width: 100%;
   }
   @media ${device.tablet} {
     width: 100%;
@@ -25,6 +25,18 @@ export const Sale = styled.p`
   width: 573.169px;
   height: 228.49px;
   flex-shrink: 0;
+  @media ${device.mobileM} {
+    margin-left: 10px;
+    font-size: 34px;
+    width: 373.169px;
+    height: 28.49px;
+  }
+  @media ${device.tablet} {
+    margin-left: 40px;
+    font-size: 64px;
+    width: 573.169px;
+    height: 228.49px;
+  }
 `;
 
 export const SaleProduct = styled.div`
