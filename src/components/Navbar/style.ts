@@ -17,9 +17,13 @@ export const Icon = styled.img`
   margin-left: 102px;
   @media ${device.mobileM} {
     margin-left: 2px;
+    width: 24px;
+    height: 24px;
   }
   @media ${device.tablet} {
     margin-left: 102px;
+    width: 44px;
+    height: 44px;
   }
 `;
 
@@ -35,7 +39,7 @@ export const Title = styled.p`
   @media ${device.mobileM} {
     margin-left: 5px;
     margin-top: 45px;
-    font-size: 12px;
+    font-size: 9px;
     margin-right: 40px;
   }
   @media ${device.tablet} {
@@ -55,12 +59,14 @@ export const Category = styled.div`
   font-weight: 500;
   line-height: normal;
   @media ${device.mobileM} {
-    gap: 40px;
-    font-size: 15px;
+    gap: 20px;
+    font-size: 13px;
+    margin-top: 45px;
   }
   @media ${device.tablet} {
     gap: 82px;
     font-size: 24px;
+    margin-top: 53px;
   }
 `;
 export const Electronics = styled.p`
@@ -94,10 +100,12 @@ export const Basket = styled.div`
   margin-right: 56px;
   margin-left: 61px;
   @media ${device.mobileM} {
-    margin-left: 50px;
+    margin-left: 30px;
+    margin-top: 40px;
   }
   @media ${device.tablet} {
     margin-left: 61px;
+    margin-top: 57px;
   }
 `;
 

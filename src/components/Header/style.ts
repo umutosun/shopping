@@ -6,7 +6,7 @@ export const Image = styled.img`
   width: 100%;
   height: 653.734px;
   @media ${device.mobileM} {
-    width: 622px;
+    width: 100vh;
   }
   @media ${device.tablet} {
     width: 100%;
