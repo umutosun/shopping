@@ -40,7 +40,7 @@ export const Title = styled.p`
     margin-left: 5px;
     margin-top: 45px;
     font-size: 9px;
-    margin-right: 40px;
+    margin-right: 20px;
   }
   @media ${device.tablet} {
     margin-left: 0;
