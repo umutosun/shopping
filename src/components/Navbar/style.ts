@@ -36,7 +36,7 @@ export const Title = styled.p`
     margin-left: 5px;
     margin-top: 45px;
     font-size: 15px;
-    margin-right: 50px;
+    margin-right: 40px;
   }
   @media ${device.tablet} {
     margin-left: 0;
@@ -55,10 +55,12 @@ export const Category = styled.div`
   font-weight: 500;
   line-height: normal;
   @media ${device.mobileM} {
-    gap: 45px;
+    gap: 40px;
+    font-size: 20px;
   }
   @media ${device.tablet} {
     gap: 82px;
+    font-size: 24px;
   }
 `;
 export const Electronics = styled.p`
@@ -91,6 +93,12 @@ export const Basket = styled.div`
   margin-top: 57px;
   margin-right: 56px;
   margin-left: 61px;
+  @media ${device.mobileM} {
+    margin-left: 50px;
+  }
+  @media ${device.tablet} {
+    margin-left: 61px;
+  }
 `;
 
 export const BasketCount = styled.div`
