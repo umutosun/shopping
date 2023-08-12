@@ -7,9 +7,11 @@ export const Image = styled.img`
   height: 653.734px;
   @media ${device.mobileM} {
     width: 100%;
+    height: 353.734px;
   }
   @media ${device.tablet} {
     width: 100%;
+    height: 653.734px;
   }
 `;
 export const Sale = styled.p`
@@ -27,15 +29,17 @@ export const Sale = styled.p`
   flex-shrink: 0;
   @media ${device.mobileM} {
     margin-left: 10px;
-    font-size: 34px;
-    width: 373.169px;
+    font-size: 24px;
+    width: 220.169px;
     height: 28.49px;
+    margin-top: -250px;
   }
   @media ${device.tablet} {
     margin-left: 40px;
     font-size: 64px;
     width: 573.169px;
     height: 228.49px;
+    margin-top: -410px;
   }
 `;
 
