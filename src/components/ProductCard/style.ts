@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../style/device";
 
 export const Wrapper = styled.div`
   border: 1px solid #b5caca;
@@ -14,6 +15,14 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   padding-top: 15px;
   margin-bottom: 80px;
+  @media ${device.mobileM} {
+    width: 100%;
+    left: 150px;
+  }
+  @media ${device.tablet} {
+    width: 250px;
+    left: 5px;
+  }
 `;
 
 export const Image = styled.img`
@@ -40,6 +49,7 @@ export const Image = styled.img`
   &:hover {
     --_i: 100%;
     transition: 0.3s, background-size 0.3s 0.3s;
+    width: 60%;
   }
 `;
 export const Info = styled.div``;
@@ -56,6 +66,12 @@ export const Price = styled.p`
   letter-spacing: 0.5px;
   margin-top: 25px;
   margin-left: 85px;
+  @media ${device.mobileM} {
+    margin-left: 150px;
+  }
+  @media ${device.tablet} {
+    margin-left: 85px;
+  }
 `;
 
 export const Title = styled.p`
@@ -72,4 +88,10 @@ export const Rate = styled.img`
   position: absolute;
   margin-left: 60px;
   margin-top: 10px;
+  @media ${device.mobileM} {
+    margin-left: 115px;
+  }
+  @media ${device.tablet} {
+    margin-left: 60px;
+  }
 `;

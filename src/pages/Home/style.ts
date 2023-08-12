@@ -12,6 +12,12 @@ export const Category = styled.div`
   margin-bottom: 23px;
   width: 627px;
   gap: 60px;
+  @media ${device.mobileM} {
+    margin-left: 50px;
+  }
+  @media ${device.tablet} {
+    margin-left: 250px;
+  }
 `;
 
 export const All = styled.div`
@@ -38,6 +44,12 @@ export const Title = styled.h1`
   line-height: normal;
   margin-left: 520px;
   margin-top: 63px;
+  @media ${device.mobileM} {
+    margin-left: 50px;
+  }
+  @media ${device.tablet} {
+    margin-left: 520px;
+  }
 `;
 
 export const WrapperProduct = styled.div`
@@ -47,6 +59,15 @@ export const WrapperProduct = styled.div`
   margin-left: 100px;
   margin-bottom: 50px;
   margin-top: 40px;
+  @media ${device.mobileM} {
+    column-gap: 150px;
+    margin-left: 0;
+  }
+  @media ${device.tablet} {
+    margin-top: 40px;
+    gap: 40px;
+    margin-left: 100px;
+  }
 
   @media ${device.laptopL} {
     margin-left: 150px;
@@ -64,6 +85,14 @@ export const Input = styled.input`
     outline: none;
     border-color: #e53a40;
   }
+  @media ${device.mobileM} {
+    margin-left: 350px;
+    margin-top: 70px;
+  }
+  @media ${device.tablet} {
+    margin-left: 930px;
+    margin-top: 170px;
+  }
 `;
 
 export const Search = styled.p`
@@ -74,6 +103,14 @@ export const Search = styled.p`
   margin-top: 170px;
   background-color: #40bfff;
   color: #fff;
+  @media ${device.mobileM} {
+    margin-left: 510px;
+    margin-top: 70px;
+  }
+  @media ${device.tablet} {
+    margin-left: 1160px;
+    margin-top: 170px;
+  }
 `;
 export const Sneakers = styled.div`
   background-color: #40bfff;
@@ -81,11 +118,29 @@ export const Sneakers = styled.div`
   margin-top: 149px;
   display: flex;
   justify-content: space-between;
+  @media ${device.mobileM} {
+    width: 625px;
+    gap: 25px;
+    height: 450px;
+  }
+  @media ${device.tablet} {
+    width: 100%;
+    gap: 0;
+    height: 550px;
+  }
 `;
 
 export const Info = styled.div`
   margin-left: 110px;
   margin-top: 140px;
+  @media ${device.mobileM} {
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+  @media ${device.tablet} {
+    margin-left: 110px;
+    margin-top: 140px;
+  }
 `;
 
 export const P1 = styled.p`
@@ -94,6 +149,12 @@ export const P1 = styled.p`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  @media ${device.mobileM} {
+    font-size: 26px;
+  }
+  @media ${device.tablet} {
+    font-size: 55px;
+  }
 `;
 
 export const P2 = styled.p`
@@ -104,6 +165,12 @@ export const P2 = styled.p`
   line-height: normal;
   margin-top: 23px;
   margin-bottom: 12px;
+  @media ${device.mobileM} {
+    font-size: 17px;
+  }
+  @media ${device.tablet} {
+    font-size: 23px;
+  }
 `;
 
 export const P3 = styled.p`
@@ -113,6 +180,12 @@ export const P3 = styled.p`
   font-weight: 600;
   line-height: normal;
   cursor: pointer;
+  @media ${device.mobileM} {
+    font-size: 15px;
+  }
+  @media ${device.tablet} {
+    font-size: 20px;
+  }
 `;
 
 export const Underline = styled.img`
@@ -123,6 +196,14 @@ export const Image = styled.img`
   margin-top: -60px;
   width: 700.564px;
   height: 502.935px;
+  @media ${device.mobileM} {
+    width: 600.564px;
+    height: 402.935px;
+  }
+  @media ${device.tablet} {
+    width: 700.564px;
+    height: 502.935px;
+  }
 `;
 
 export const Article = styled.div`
@@ -130,12 +211,28 @@ export const Article = styled.div`
   margin-left: 220px;
   display: flex;
   gap: 200px;
+  @media ${device.mobileM} {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+  @media ${device.tablet} {
+    flex-direction: row;
+  }
 `;
 
 export const Shipping = styled.div``;
 export const CarIcon = styled.img`
   margin-bottom: 50px;
   margin-left: 50px;
+  @media ${device.mobileM} {
+    margin-bottom: 30px;
+    margin-left: 40px;
+  }
+  @media ${device.tablet} {
+    margin-bottom: 50px;
+    margin-left: 50px;
+  }
 `;
 export const ShippingTitle = styled.p`
   color: #22262a;
@@ -144,6 +241,14 @@ export const ShippingTitle = styled.p`
   font-weight: 500;
   line-height: normal;
   margin-bottom: 10px;
+  @media ${device.mobileM} {
+    text-align: center;
+    margin-left: 30px;
+  }
+  @media ${device.tablet} {
+    text-align: center;
+    margin-left: 0px;
+  }
 `;
 export const ShippingP = styled.p`
   width: 190.555px;
@@ -161,6 +266,14 @@ export const Refund = styled.div``;
 export const RefundIcon = styled.img`
   margin-bottom: 38px;
   margin-left: 50px;
+  @media ${device.mobileM} {
+    margin-bottom: 25px;
+    margin-left: 55px;
+  }
+  @media ${device.tablet} {
+    margin-bottom: 38px;
+    margin-left: 50px;
+  }
 `;
 export const RefundTitle = styled.p`
   color: #22262a;
@@ -169,6 +282,13 @@ export const RefundTitle = styled.p`
   font-weight: 500;
   line-height: normal;
   margin-bottom: 10px;
+  @media ${device.mobileM} {
+    text-align: center;
+    margin-left: 25px;
+  }
+  @media ${device.tablet} {
+    margin-left: 0;
+  }
 `;
 export const RefundP = styled.p`
   width: 190.555px;

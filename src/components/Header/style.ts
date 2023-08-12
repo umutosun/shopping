@@ -6,7 +6,7 @@ export const Image = styled.img`
   width: 100%;
   height: 653.734px;
   @media ${device.mobileM} {
-    width: 700px;
+    width: 710px;
   }
   @media ${device.tablet} {
     width: 100%;
@@ -33,6 +33,10 @@ export const SaleProduct = styled.div`
   margin-top: -95px;
   gap: 0;
   @media ${device.mobileM} {
+    gap: 15px;
+  }
+  @media ${device.tablet} {
+    gap: 0;
   }
 `;
 
@@ -63,7 +67,7 @@ export const BagTitle = styled.p`
 export const BagImage = styled.img`
   height: 358.315px;
   @media ${device.mobileM} {
-    height: 160px;
+    height: 170px;
     margin-top: 2px;
   }
   @media ${device.tablet} {
@@ -165,7 +169,7 @@ export const ShoesImage = styled.img`
   margin-left: -2px;
   height: 358.315px;
   @media ${device.mobileM} {
-    height: 160px;
+    height: 170px;
   }
   @media ${device.tablet} {
     height: 358.315px;
@@ -266,7 +270,7 @@ export const ShoesTwoImage = styled.img`
   margin-left: -2px;
   height: 358.315px;
   @media ${device.mobileM} {
-    height: 160px;
+    height: 170px;
   }
   @media ${device.tablet} {
     height: 358.315px;
