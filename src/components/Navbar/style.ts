@@ -35,7 +35,7 @@ export const Title = styled.p`
   @media ${device.mobileM} {
     margin-left: 5px;
     margin-top: 45px;
-    font-size: 15px;
+    font-size: 12px;
     margin-right: 40px;
   }
   @media ${device.tablet} {
@@ -56,7 +56,7 @@ export const Category = styled.div`
   line-height: normal;
   @media ${device.mobileM} {
     gap: 40px;
-    font-size: 20px;
+    font-size: 15px;
   }
   @media ${device.tablet} {
     gap: 82px;

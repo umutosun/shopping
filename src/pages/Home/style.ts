@@ -13,10 +13,12 @@ export const Category = styled.div`
   width: 627px;
   gap: 60px;
   @media ${device.mobileM} {
-    margin-left: 50px;
+    margin-left: 20px;
+    gap: 40px;
   }
   @media ${device.tablet} {
     margin-left: 250px;
+    gap: 60px;
   }
 `;
 
@@ -218,6 +220,7 @@ export const Article = styled.div`
   }
   @media ${device.tablet} {
     flex-direction: row;
+    gap: 200px;
   }
 `;
 
@@ -306,6 +309,14 @@ export const Support = styled.div``;
 export const SupportIcon = styled.img`
   margin-bottom: 30px;
   margin-left: 50px;
+  @media ${device.mobileM} {
+    margin-bottom: 25px;
+    margin-left: 55px;
+  }
+  @media ${device.tablet} {
+    margin-bottom: 30px;
+    margin-left: 50px;
+  }
 `;
 export const SupportTitle = styled.p`
   color: #22262a;
@@ -314,6 +325,13 @@ export const SupportTitle = styled.p`
   font-weight: 500;
   line-height: normal;
   margin-bottom: 10px;
+  @media ${device.mobileM} {
+    text-align: center;
+    margin-left: 25px;
+  }
+  @media ${device.tablet} {
+    margin-left: 0;
+  }
 `;
 export const SupportP = styled.p`
   width: 190.555px;
@@ -340,10 +358,24 @@ export const ArticleTitle = styled.p`
   line-height: normal;
   text-align: center;
   margin-bottom: 70px;
+  @media ${device.mobileM} {
+    margin-left: 150px;
+    text-align: start;
+  }
+  @media ${device.tablet} {
+    margin-left: -60px;
+    text-align: center;
+  }
 `;
 export const ArticleInfo = styled.div`
   display: flex;
   gap: 50px;
+  @media ${device.mobileM} {
+    flex-direction: column;
+  }
+  @media ${device.tablet} {
+    flex-direction: row;
+  }
 `;
 
 export const Industry = styled.div`
@@ -384,6 +416,12 @@ export const IndustryInfoP3 = styled.p`
 export const Tools = styled.div`
   display: flex;
   gap: 5px;
+  @media ${device.mobileM} {
+    gap: 50px;
+  }
+  @media ${device.tablet} {
+    gap: 5px;
+  }
 `;
 export const ToolsIcon = styled.img`
   width: 116.955px;
@@ -469,11 +507,27 @@ export const ArticleThreeTitle = styled.p`
   font-weight: 600;
   line-height: normal;
   margin-bottom: 70px;
+  @media ${device.mobileM} {
+    margin-left: 220px;
+  }
+  @media ${device.tablet} {
+    margin-left: 0px;
+  }
 `;
 
 export const ArticleProduct = styled.div`
   margin-left: 100px;
   display: flex;
+  @media ${device.mobileM} {
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 130px;
+  }
+  @media ${device.tablet} {
+    flex-direction: row;
+    gap: 0px;
+    margin-left: 100px;
+  }
 `;
 
 export const ProductOne = styled.div`

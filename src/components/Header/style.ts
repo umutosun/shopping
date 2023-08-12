@@ -6,7 +6,7 @@ export const Image = styled.img`
   width: 100%;
   height: 653.734px;
   @media ${device.mobileM} {
-    width: 710px;
+    width: 622px;
   }
   @media ${device.tablet} {
     width: 100%;
@@ -33,9 +33,11 @@ export const SaleProduct = styled.div`
   margin-top: -95px;
   gap: 0;
   @media ${device.mobileM} {
-    gap: 15px;
+    gap: 10px;
+    margin-left: 5px;
   }
   @media ${device.tablet} {
+    margin-left: 40px;
     gap: 0;
   }
 `;
