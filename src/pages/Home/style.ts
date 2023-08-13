@@ -98,7 +98,7 @@ export const Input = styled.input`
     border-color: #e53a40;
   }
   @media ${device.mobileS} {
-    margin-left: 170px;
+    margin-left: 160px;
     margin-top: 70px;
     height: 23.3px;
     width: 150px;
@@ -120,7 +120,7 @@ export const Search = styled.p`
   background-color: #40bfff;
   color: #fff;
   @media ${device.mobileM} {
-    margin-left: 320px;
+    margin-left: 310px;
     margin-top: 70px;
     padding: 0.2px 0.5px;
   }
@@ -225,6 +225,7 @@ export const Image = styled.img`
     width: 350.564px;
     height: 152.935px;
     margin-top: -30px;
+    display: none;
   }
   @media ${device.tablet} {
     width: 700.564px;

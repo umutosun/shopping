@@ -2,9 +2,8 @@ import styled from "styled-components";
 import { device } from "../../style/device";
 
 export const Wrapper = styled.div`
-  width: 100%;
+  width: 90%;
   display: flex;
-  justify-content: space-between;
   height: 165px;
   @media ${device.mobileM} {
     height: 120px;
@@ -104,12 +103,14 @@ export const Basket = styled.div`
   margin-right: 56px;
   margin-left: 61px;
   @media ${device.mobileM} {
-    margin-left: 30px;
+    margin-left: 15px;
     margin-top: 40px;
+    margin-right: 0;
   }
   @media ${device.tablet} {
     margin-left: 61px;
     margin-top: 57px;
+    margin-right: 56px;
   }
 `;
 
