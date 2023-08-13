@@ -141,9 +141,10 @@ export const About = styled.div`
   margin-top: 370px;
   display: flex;
   gap: 200px;
+  height: 50px;
   @media ${device.mobileM} {
     margin-left: 10px;
-    gap: 50px;
+    gap: 30px;
     margin-top: 450px;
     flex-wrap: wrap;
   }
@@ -204,7 +205,7 @@ export const Line = styled.img`
   @media ${device.mobileM} {
     margin-left: 10px;
     width: 300px;
-    margin-top: 920px;
+    margin-top: 820px;
   }
   @media ${device.tablet} {
     margin-left: 150px;
@@ -224,7 +225,7 @@ export const Copyright = styled.p`
   line-height: normal;
   @media ${device.mobileM} {
     margin-left: 10px;
-    margin-top: 890px;
+    margin-top: 800px;
   }
   @media ${device.tablet} {
     margin-left: 150px;
@@ -238,8 +239,8 @@ export const Payment = styled.div`
   display: flex;
   gap: 20px;
   @media ${device.mobileM} {
-    margin-left: 80px;
-    margin-top: 930px;
+    margin-left: 60px;
+    margin-top: 830px;
   }
   @media ${device.tablet} {
     margin-top: 630px;

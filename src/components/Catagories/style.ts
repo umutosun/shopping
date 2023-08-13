@@ -6,6 +6,10 @@ export const Category = styled.div`
   margin-left: 15px;
   margin-top: 5px;
   @media ${device.mobileM} {
+    margin-left: 0;
+  }
+  @media ${device.tablet} {
+    margin-left: 15px;
   }
 `;
 export const P = styled.p`

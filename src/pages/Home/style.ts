@@ -14,11 +14,13 @@ export const Category = styled.div`
   gap: 60px;
   @media ${device.mobileM} {
     margin-left: 10px;
-    gap: 0px;
+    gap: 15px;
+    width: 98%;
   }
   @media ${device.tablet} {
     margin-left: 250px;
     gap: 60px;
+    width: 627px;
   }
 `;
 
@@ -134,7 +136,7 @@ export const Sneakers = styled.div`
   display: flex;
   justify-content: space-between;
   @media ${device.mobileM} {
-    width: 100%;
+    width: 98%;
     gap: 25px;
     height: 150px;
     margin-top: 50px;
@@ -370,7 +372,7 @@ export const ArticleTwo = styled.div`
   margin-top: 120px;
   margin-left: 100px;
   @media ${device.mobileM} {
-    margin-left: 30px;
+    margin-left: 20px;
   }
   @media ${device.tablet} {
     margin-left: 100px;
@@ -388,6 +390,7 @@ export const ArticleTitle = styled.p`
   @media ${device.mobileM} {
     margin-left: 50px;
     text-align: start;
+    font-size: 34px;
   }
   @media ${device.tablet} {
     margin-left: -60px;
@@ -421,6 +424,12 @@ export const IndustryInfoP1 = styled.p`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  @media ${device.mobileM} {
+    font-size: 16px;
+  }
+  @media ${device.tablet} {
+    font-size: 18px;
+  }
 `;
 export const IndustryInfoP2 = styled.p`
   color: #22262a;
@@ -428,6 +437,12 @@ export const IndustryInfoP2 = styled.p`
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  @media ${device.mobileM} {
+    font-size: 18px;
+  }
+  @media ${device.tablet} {
+    font-size: 22px;
+  }
 `;
 export const IndustryInfoP3 = styled.p`
   color: #22262a;
@@ -438,6 +453,12 @@ export const IndustryInfoP3 = styled.p`
   line-height: normal;
   width: 190.555px;
   height: 89.318px;
+  @media ${device.mobileM} {
+    font-size: 15px;
+  }
+  @media ${device.tablet} {
+    font-size: 18px;
+  }
 `;
 
 export const Tools = styled.div`
@@ -462,6 +483,12 @@ export const ToolsInfoP1 = styled.p`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  @media ${device.mobileM} {
+    font-size: 16px;
+  }
+  @media ${device.tablet} {
+    font-size: 18px;
+  }
 `;
 export const ToolsInfoP2 = styled.p`
   color: #22262a;
@@ -469,6 +496,12 @@ export const ToolsInfoP2 = styled.p`
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  @media ${device.mobileM} {
+    font-size: 18px;
+  }
+  @media ${device.tablet} {
+    font-size: 22px;
+  }
 `;
 export const ToolsInfoP3 = styled.p`
   color: #22262a;
@@ -479,6 +512,12 @@ export const ToolsInfoP3 = styled.p`
   line-height: normal;
   width: 190.555px;
   height: 89.318px;
+  @media ${device.mobileM} {
+    font-size: 16px;
+  }
+  @media ${device.tablet} {
+    font-size: 18px;
+  }
 `;
 
 export const Community = styled.div`
@@ -500,6 +539,12 @@ export const CommunityInfoP1 = styled.p`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  @media ${device.mobileM} {
+    font-size: 16px;
+  }
+  @media ${device.tablet} {
+    font-size: 18px;
+  }
 `;
 
 export const CommunityInfoP2 = styled.p`
@@ -508,6 +553,12 @@ export const CommunityInfoP2 = styled.p`
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  @media ${device.mobileM} {
+    font-size: 18px;
+  }
+  @media ${device.tablet} {
+    font-size: 22px;
+  }
 `;
 
 export const CommunityInfoP3 = styled.p`
@@ -519,6 +570,12 @@ export const CommunityInfoP3 = styled.p`
   line-height: normal;
   width: 190.555px;
   height: 89.318px;
+  @media ${device.mobileM} {
+    font-size: 16px;
+  }
+  @media ${device.tablet} {
+    font-size: 18px;
+  }
 `;
 
 export const ArticleThree = styled.div`
@@ -535,7 +592,7 @@ export const ArticleThreeTitle = styled.p`
   line-height: normal;
   margin-bottom: 70px;
   @media ${device.mobileM} {
-    margin-left: 30px;
+    margin-left: 10px;
   }
   @media ${device.tablet} {
     margin-left: 0px;
@@ -548,7 +605,7 @@ export const ArticleProduct = styled.div`
   @media ${device.mobileM} {
     flex-direction: column;
     gap: 50px;
-    margin-left: 50px;
+    margin-left: 10px;
   }
   @media ${device.tablet} {
     flex-direction: row;
