@@ -16,11 +16,9 @@ export const Wrapper = styled.div`
   padding-top: 15px;
   margin-bottom: 80px;
   @media ${device.mobileM} {
-    width: 100%;
-    left: 150px;
+    left: 80px;
   }
   @media ${device.tablet} {
-    width: 250px;
     left: 5px;
   }
 `;
@@ -67,10 +65,8 @@ export const Price = styled.p`
   margin-top: 25px;
   margin-left: 85px;
   @media ${device.mobileM} {
-    margin-left: 150px;
   }
   @media ${device.tablet} {
-    margin-left: 85px;
   }
 `;
 
@@ -89,9 +85,7 @@ export const Rate = styled.img`
   margin-left: 60px;
   margin-top: 10px;
   @media ${device.mobileM} {
-    margin-left: 115px;
   }
   @media ${device.tablet} {
-    margin-left: 60px;
   }
 `;

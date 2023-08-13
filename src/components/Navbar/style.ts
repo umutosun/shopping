@@ -64,7 +64,7 @@ export const Category = styled.div`
   line-height: normal;
   @media ${device.mobileM} {
     gap: 20px;
-    font-size: 11px;
+    font-size: 10.5px;
     margin-top: 45px;
   }
   @media ${device.tablet} {

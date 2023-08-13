@@ -13,8 +13,8 @@ export const Category = styled.div`
   width: 627px;
   gap: 60px;
   @media ${device.mobileM} {
-    margin-left: 20px;
-    gap: 40px;
+    margin-left: 10px;
+    gap: 0px;
   }
   @media ${device.tablet} {
     margin-left: 250px;
@@ -34,6 +34,12 @@ export const All = styled.div`
     color: #33a0ff;
     text-decoration: underline;
   }
+  @media ${device.mobileM} {
+    font-size: 11.3px;
+  }
+  @media ${device.tablet} {
+    font-size: 18px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -47,10 +53,12 @@ export const Title = styled.h1`
   margin-left: 520px;
   margin-top: 63px;
   @media ${device.mobileM} {
-    margin-left: 50px;
+    margin-left: 10px;
+    font-size: 22px;
   }
   @media ${device.tablet} {
     margin-left: 520px;
+    font-size: 35px;
   }
 `;
 
@@ -87,13 +95,17 @@ export const Input = styled.input`
     outline: none;
     border-color: #e53a40;
   }
-  @media ${device.mobileM} {
-    margin-left: 350px;
+  @media ${device.mobileS} {
+    margin-left: 170px;
     margin-top: 70px;
+    height: 23.3px;
+    width: 150px;
   }
   @media ${device.tablet} {
     margin-left: 930px;
     margin-top: 170px;
+    height: 43.3px;
+    width: 230px;
   }
 `;
 
@@ -106,8 +118,9 @@ export const Search = styled.p`
   background-color: #40bfff;
   color: #fff;
   @media ${device.mobileM} {
-    margin-left: 510px;
+    margin-left: 320px;
     margin-top: 70px;
+    padding: 0.2px 0.5px;
   }
   @media ${device.tablet} {
     margin-left: 1160px;
@@ -121,9 +134,9 @@ export const Sneakers = styled.div`
   display: flex;
   justify-content: space-between;
   @media ${device.mobileM} {
-    width: 625px;
+    width: 100%;
     gap: 25px;
-    height: 450px;
+    height: 150px;
   }
   @media ${device.tablet} {
     width: 100%;
@@ -137,7 +150,7 @@ export const Info = styled.div`
   margin-top: 140px;
   @media ${device.mobileM} {
     margin-left: 10px;
-    margin-top: 40px;
+    margin-top: 20px;
   }
   @media ${device.tablet} {
     margin-left: 110px;
@@ -152,7 +165,7 @@ export const P1 = styled.p`
   font-weight: 500;
   line-height: normal;
   @media ${device.mobileM} {
-    font-size: 26px;
+    font-size: 12px;
   }
   @media ${device.tablet} {
     font-size: 55px;
@@ -168,7 +181,7 @@ export const P2 = styled.p`
   margin-top: 23px;
   margin-bottom: 12px;
   @media ${device.mobileM} {
-    font-size: 17px;
+    font-size: 10px;
   }
   @media ${device.tablet} {
     font-size: 23px;
@@ -183,7 +196,7 @@ export const P3 = styled.p`
   line-height: normal;
   cursor: pointer;
   @media ${device.mobileM} {
-    font-size: 15px;
+    font-size: 8px;
   }
   @media ${device.tablet} {
     font-size: 20px;
@@ -192,6 +205,12 @@ export const P3 = styled.p`
 
 export const Underline = styled.img`
   position: absolute;
+  @media ${device.mobileM} {
+    width: 45px;
+  }
+  @media ${device.tablet} {
+    width: 110px;
+  }
 `;
 
 export const Image = styled.img`
@@ -199,12 +218,14 @@ export const Image = styled.img`
   width: 700.564px;
   height: 502.935px;
   @media ${device.mobileM} {
-    width: 600.564px;
-    height: 402.935px;
+    width: 350.564px;
+    height: 152.935px;
+    margin-top: -30px;
   }
   @media ${device.tablet} {
     width: 700.564px;
     height: 502.935px;
+    margin-top: -60px;
   }
 `;
 

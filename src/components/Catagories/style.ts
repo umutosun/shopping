@@ -1,9 +1,12 @@
 import styled from "styled-components";
+import { device } from "../../style/device";
 
 export const Category = styled.div`
   cursor: pointer;
   margin-left: 15px;
   margin-top: 5px;
+  @media ${device.mobileM} {
+  }
 `;
 export const P = styled.p`
   color: #262626;
@@ -16,4 +19,10 @@ export const P = styled.p`
     text-decoration: underline;
   }
   text-transform: capitalize;
+  @media ${device.mobileM} {
+    font-size: 11.3px;
+  }
+  @media ${device.tablet} {
+    font-size: 17px;
+  }
 `;
