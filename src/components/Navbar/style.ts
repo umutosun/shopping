@@ -7,6 +7,10 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   height: 165px;
   @media ${device.mobileM} {
+    height: 120px;
+  }
+  @media ${device.tablet} {
+    height: 165px;
   }
 `;
 
@@ -60,7 +64,7 @@ export const Category = styled.div`
   line-height: normal;
   @media ${device.mobileM} {
     gap: 20px;
-    font-size: 10px;
+    font-size: 11px;
     margin-top: 45px;
   }
   @media ${device.tablet} {

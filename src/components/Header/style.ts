@@ -197,7 +197,6 @@ export const ShoesImage = styled.img`
   height: 358.315px;
   @media ${device.mobileM} {
     height: 100px;
-    margin-left: -4px;
   }
   @media ${device.tablet} {
     height: 358.315px;
@@ -301,7 +300,6 @@ export const ShoesTwoImage = styled.img`
   height: 358.315px;
   @media ${device.mobileM} {
     height: 100px;
-    margin-left: -4px;
   }
   @media ${device.tablet} {
     height: 358.315px;
