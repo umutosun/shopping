@@ -7,12 +7,14 @@ export const Wrapper = styled.div`
   margin-top: 280px;
   display: flex;
   @media ${device.mobileM} {
-    width: 622px;
+    width: 100%;
     margin-top: 180px;
+    height: 980px;
   }
   @media ${device.tablet} {
     width: 100%;
     margin-top: 280px;
+    height: 680px;
   }
 `;
 export const WrapperInfo = styled.div`
@@ -24,7 +26,7 @@ export const Communication = styled.div`
   position: absolute;
   display: flex;
   @media ${device.mobileM} {
-    flex-direction: row;
+    flex-direction: column;
     margin-left: 10px;
     margin-top: 50px;
   }
@@ -67,10 +69,14 @@ export const Info = styled.p`
 export const CommTwo = styled.div`
   margin-left: 300px;
   @media ${device.mobileM} {
-    margin-left: 30px;
+    margin-left: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
   @media ${device.tablet} {
     margin-left: 300px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 `;
 
@@ -105,7 +111,7 @@ export const Twitter = styled.img``;
 export const CommThree = styled.div`
   margin-left: 180px;
   @media ${device.mobileM} {
-    margin-left: 20px;
+    margin-left: 0px;
   }
   @media ${device.tablet} {
     margin-left: 180px;
@@ -138,7 +144,8 @@ export const About = styled.div`
   @media ${device.mobileM} {
     margin-left: 10px;
     gap: 50px;
-    margin-top: 350px;
+    margin-top: 450px;
+    flex-wrap: wrap;
   }
   @media ${device.tablet} {
     margin-left: 130px;
@@ -154,6 +161,12 @@ export const InformationTitle = styled.p`
   font-weight: 400;
   line-height: normal;
   margin-bottom: 29px;
+  @media ${device.mobileM} {
+    margin-bottom: 15px;
+  }
+  @media ${device.tablet} {
+    margin-bottom: 29px;
+  }
 `;
 export const AboutUs = styled.p`
   color: #262626;
@@ -190,11 +203,13 @@ export const Line = styled.img`
   margin-left: 150px;
   @media ${device.mobileM} {
     margin-left: 10px;
-    width: 600px;
+    width: 300px;
+    margin-top: 920px;
   }
   @media ${device.tablet} {
     margin-left: 150px;
     width: 1150.86px;
+    margin-top: 600px;
   }
 `;
 export const Copyright = styled.p`
@@ -209,9 +224,11 @@ export const Copyright = styled.p`
   line-height: normal;
   @media ${device.mobileM} {
     margin-left: 10px;
+    margin-top: 890px;
   }
   @media ${device.tablet} {
     margin-left: 150px;
+    margin-top: 630px;
   }
 `;
 export const Payment = styled.div`
@@ -221,7 +238,12 @@ export const Payment = styled.div`
   display: flex;
   gap: 20px;
   @media ${device.mobileM} {
-    margin-left: 380px;
+    margin-left: 80px;
+    margin-top: 930px;
+  }
+  @media ${device.tablet} {
+    margin-top: 630px;
+    margin-left: 1070px;
   }
 `;
 export const PaymentIcon = styled.img``;

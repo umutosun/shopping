@@ -137,11 +137,13 @@ export const Sneakers = styled.div`
     width: 100%;
     gap: 25px;
     height: 150px;
+    margin-top: 50px;
   }
   @media ${device.tablet} {
     width: 100%;
     gap: 0;
     height: 550px;
+    margin-top: 149px;
   }
 `;
 
@@ -238,6 +240,7 @@ export const Article = styled.div`
     display: flex;
     flex-direction: column;
     gap: 100px;
+    margin-left: 100px;
   }
   @media ${device.tablet} {
     flex-direction: row;
@@ -266,8 +269,7 @@ export const ShippingTitle = styled.p`
   line-height: normal;
   margin-bottom: 10px;
   @media ${device.mobileM} {
-    text-align: center;
-    margin-left: 30px;
+    text-align: start;
   }
   @media ${device.tablet} {
     text-align: center;
@@ -307,8 +309,7 @@ export const RefundTitle = styled.p`
   line-height: normal;
   margin-bottom: 10px;
   @media ${device.mobileM} {
-    text-align: center;
-    margin-left: 25px;
+    text-align: start;
   }
   @media ${device.tablet} {
     margin-left: 0;
@@ -347,8 +348,7 @@ export const SupportTitle = styled.p`
   line-height: normal;
   margin-bottom: 10px;
   @media ${device.mobileM} {
-    text-align: center;
-    margin-left: 25px;
+    text-align: start;
   }
   @media ${device.tablet} {
     margin-left: 0;
@@ -369,6 +369,12 @@ export const SupportP = styled.p`
 export const ArticleTwo = styled.div`
   margin-top: 120px;
   margin-left: 100px;
+  @media ${device.mobileM} {
+    margin-left: 30px;
+  }
+  @media ${device.tablet} {
+    margin-left: 100px;
+  }
 `;
 export const ArticleTitle = styled.p`
   color: #22262a;
@@ -380,7 +386,7 @@ export const ArticleTitle = styled.p`
   text-align: center;
   margin-bottom: 70px;
   @media ${device.mobileM} {
-    margin-left: 150px;
+    margin-left: 50px;
     text-align: start;
   }
   @media ${device.tablet} {
@@ -529,7 +535,7 @@ export const ArticleThreeTitle = styled.p`
   line-height: normal;
   margin-bottom: 70px;
   @media ${device.mobileM} {
-    margin-left: 220px;
+    margin-left: 30px;
   }
   @media ${device.tablet} {
     margin-left: 0px;
@@ -542,7 +548,7 @@ export const ArticleProduct = styled.div`
   @media ${device.mobileM} {
     flex-direction: column;
     gap: 50px;
-    margin-left: 130px;
+    margin-left: 50px;
   }
   @media ${device.tablet} {
     flex-direction: row;
