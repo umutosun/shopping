@@ -321,11 +321,13 @@ export const ShoesTwoPrice = styled.p`
     margin-left: 65px;
     font-size: 10px;
     margin-top: -25px;
+    width: 40.818px;
   }
   @media ${device.tablet} {
     margin-left: 255px;
     font-size: 30px;
     margin-top: -70px;
+    width: 117.818px;
   }
 `;
 export const ShoesTwoDiscount = styled.p`

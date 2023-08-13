@@ -225,7 +225,6 @@ export const Image = styled.img`
     width: 350.564px;
     height: 152.935px;
     margin-top: -30px;
-    display: none;
   }
   @media ${device.tablet} {
     width: 700.564px;
@@ -248,6 +247,7 @@ export const Article = styled.div`
   @media ${device.tablet} {
     flex-direction: row;
     gap: 200px;
+    margin-left: 220px;
   }
 `;
 
@@ -607,6 +607,7 @@ export const ArticleProduct = styled.div`
     flex-direction: column;
     gap: 50px;
     margin-left: 10px;
+    width: 350px;
   }
   @media ${device.tablet} {
     flex-direction: row;
@@ -629,6 +630,13 @@ export const ProductOneInfo = styled.div`
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: 230px;
+  @media ${device.mobileM} {
+    width: 150px;
+  }
+  @media ${device.tablet} {
+    width: 230px;
+  }
 `;
 
 export const OneTitle = styled.p`
@@ -639,6 +647,10 @@ export const OneTitle = styled.p`
   font-weight: 400;
   line-height: normal;
   width: 230.292px;
+  @media ${device.mobileM} {
+    font-size: 18px;
+    width: 180.292px;
+  }
 `;
 
 export const OneRate = styled.img`
