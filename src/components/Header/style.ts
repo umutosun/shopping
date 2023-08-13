@@ -49,8 +49,8 @@ export const SaleProduct = styled.div`
   margin-top: -95px;
   gap: 0;
   @media ${device.mobileM} {
-    gap: 10px;
-    margin-left: 5px;
+    gap: 0px;
+    margin-left: 3px;
   }
   @media ${device.tablet} {
     margin-left: 40px;
@@ -72,20 +72,24 @@ export const BagTitle = styled.p`
   margin-top: 29px;
   margin-left: 52px;
   @media ${device.mobileM} {
-    font-size: 13px;
+    font-size: 8px;
     margin-top: 2px;
     margin-left: 0;
+    width: 102.181px;
+    height: 58.08px;
   }
   @media ${device.tablet} {
     font-size: 20px;
     margin-top: 29px;
     margin-left: 52px;
+    width: 202.181px;
+    height: 58.08px;
   }
 `;
 export const BagImage = styled.img`
   height: 358.315px;
   @media ${device.mobileM} {
-    height: 170px;
+    height: 100px;
     margin-top: 2px;
   }
   @media ${device.tablet} {
@@ -106,9 +110,9 @@ export const BagPrice = styled.p`
   width: 117.818px;
   position: absolute;
   @media ${device.mobileM} {
-    margin-left: 112px;
-    font-size: 17px;
-    margin-top: -32px;
+    margin-left: 70px;
+    font-size: 11px;
+    margin-top: -22px;
   }
   @media ${device.tablet} {
     margin-left: 277px;
@@ -128,9 +132,9 @@ export const BagDiscount = styled.p`
   margin-left: 52px;
   width: 75px;
   @media ${device.mobileM} {
-    margin-top: -45px;
+    margin-top: -30px;
     margin-left: 5px;
-    font-size: 15px;
+    font-size: 9px;
   }
   @media ${device.tablet} {
     margin-top: -100px;
@@ -149,13 +153,14 @@ export const BagPercentage = styled.p`
   line-height: 150%;
   letter-spacing: 0.5px;
   @media ${device.mobileM} {
-    margin-top: -22px;
-    margin-left: 78px;
-    font-size: 15px;
+    margin-top: -13px;
+    margin-left: 50px;
+    font-size: 9px;
   }
   @media ${device.tablet} {
     margin-left: 133px;
     margin-top: -27px;
+    font-size: 18px;
   }
 `;
 
@@ -173,21 +178,26 @@ export const ShoesTitle = styled.p`
   margin-top: 29px;
   margin-left: 52px;
   @media ${device.mobileM} {
-    font-size: 13px;
+    font-size: 8px;
     margin-top: 2px;
     margin-left: 0;
+    width: 100.237px;
+    height: 57.468px;
   }
   @media ${device.tablet} {
     font-size: 20px;
     margin-top: 29px;
     margin-left: 52px;
+    width: 178.237px;
+    height: 57.468px;
   }
 `;
 export const ShoesImage = styled.img`
   margin-left: -2px;
   height: 358.315px;
   @media ${device.mobileM} {
-    height: 170px;
+    height: 100px;
+    margin-left: -4px;
   }
   @media ${device.tablet} {
     height: 358.315px;
@@ -206,9 +216,9 @@ export const ShoesPrice = styled.p`
   width: 117.818px;
   position: absolute;
   @media ${device.mobileM} {
-    margin-left: 120px;
-    margin-top: -150px;
-    font-size: 17px;
+    margin-left: 73px;
+    margin-top: -95px;
+    font-size: 11px;
   }
   @media ${device.tablet} {
     margin-left: 277px;
@@ -228,9 +238,9 @@ export const ShoesDiscount = styled.p`
   margin-left: 145px;
   width: 75px;
   @media ${device.mobileM} {
-    margin-top: -30px;
-    margin-left: 15px;
-    font-size: 15px;
+    margin-top: -20px;
+    margin-left: 17px;
+    font-size: 9px;
   }
   @media ${device.tablet} {
     margin-top: -60px;
@@ -249,9 +259,9 @@ export const ShoesPercentage = styled.p`
   line-height: 150%;
   letter-spacing: 0.5px;
   @media ${device.mobileM} {
-    font-size: 15px;
-    margin-left: 90px;
-    margin-top: -23px;
+    font-size: 9px;
+    margin-left: 60px;
+    margin-top: -13px;
   }
   @media ${device.tablet} {
     font-size: 18px;
@@ -274,21 +284,24 @@ export const ShoesTwoTitle = styled.p`
   margin-top: 29px;
   margin-left: 52px;
   @media ${device.mobileM} {
-    font-size: 13px;
+    font-size: 8px;
     margin-top: 2px;
     margin-left: 0;
+    width: 100px;
   }
   @media ${device.tablet} {
     font-size: 20px;
     margin-top: 29px;
     margin-left: 52px;
+    width: 202.181px;
   }
 `;
 export const ShoesTwoImage = styled.img`
   margin-left: -2px;
   height: 358.315px;
   @media ${device.mobileM} {
-    height: 170px;
+    height: 100px;
+    margin-left: -4px;
   }
   @media ${device.tablet} {
     height: 358.315px;
@@ -307,9 +320,9 @@ export const ShoesTwoPrice = styled.p`
   width: 117.818px;
   position: absolute;
   @media ${device.mobileM} {
-    margin-left: 90px;
-    font-size: 17px;
-    margin-top: -35px;
+    margin-left: 65px;
+    font-size: 10px;
+    margin-top: -25px;
   }
   @media ${device.tablet} {
     margin-left: 255px;
@@ -329,9 +342,9 @@ export const ShoesTwoDiscount = styled.p`
   margin-left: 52px;
   width: 75px;
   @media ${device.mobileM} {
-    margin-top: -130px;
+    margin-top: -82px;
     margin-left: 5px;
-    font-size: 15px;
+    font-size: 9px;
   }
   @media ${device.tablet} {
     margin-top: -260px;
@@ -350,9 +363,9 @@ export const ShoesTwoPercentage = styled.p`
   line-height: 150%;
   letter-spacing: 0.5px;
   @media ${device.mobileM} {
-    margin-top: -20px;
-    margin-left: 75px;
-    font-size: 15px;
+    margin-top: -13px;
+    margin-left: 50px;
+    font-size: 9px;
   }
   @media ${device.tablet} {
     margin-left: 130px;
