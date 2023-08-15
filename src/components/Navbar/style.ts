@@ -13,6 +13,10 @@ export const Wrapper = styled.div`
     height: 165px;
     width: 100%;
   }
+  @media ${device.desktop} {
+    height: 165px;
+    width: 90%;
+  }
 `;
 
 export const Icon = styled.img`
@@ -31,7 +35,7 @@ export const Icon = styled.img`
     height: 44px;
   }
   @media ${device.laptop} {
-    margin-left: 102px;
+    margin-left: 82px;
     width: 44px;
     height: 44px;
   }
@@ -67,8 +71,8 @@ export const Title = styled.p`
   @media ${device.desktop} {
     margin-left: 5px;
     margin-top: 45px;
-    font-size: 35px;
-    margin-right: 240px;
+    font-size: 28px;
+    margin-right: 210px;
   }
 `;
 export const Category = styled.div`
