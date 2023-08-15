@@ -334,7 +334,7 @@ export const Copyright = styled.p`
     margin-left: 150px;
     margin-top: 630px;
   }
-  @media ${device.laptop} {
+  @media ${device.desktop} {
     margin-left: 150px;
     margin-top: 730px;
     font-size: 22px;
@@ -358,7 +358,7 @@ export const Payment = styled.div`
     margin-top: 630px;
     margin-left: 1070px;
   }
-  @media ${device.laptop} {
+  @media ${device.desktop} {
     margin-top: 730px;
     margin-left: 1470px;
   }
