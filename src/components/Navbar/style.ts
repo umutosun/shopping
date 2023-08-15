@@ -71,8 +71,8 @@ export const Title = styled.p`
   @media ${device.desktop} {
     margin-left: 5px;
     margin-top: 45px;
-    font-size: 28px;
-    margin-right: 210px;
+    font-size: 32px;
+    margin-right: 220px;
   }
 `;
 export const Category = styled.div`

@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <S.WrapperHeader>
       <S.Image src={banner_photo}></S.Image>
-      <S.Sale>Super Flash Sale 40% Off</S.Sale>
+      <S.Sale>Super Flash Sale 50% Off</S.Sale>
       <S.SaleProduct>
         <S.Bag>
           <S.BagTitle>FS - QUILTED MAXI CROSS BAG</S.BagTitle>

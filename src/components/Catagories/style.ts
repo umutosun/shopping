@@ -29,4 +29,7 @@ export const P = styled.p`
   @media ${device.tablet} {
     font-size: 17px;
   }
+  @media ${device.desktop} {
+    font-size: 27px;
+  }
 `;

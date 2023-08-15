@@ -27,6 +27,11 @@ export const Category = styled.div`
     gap: 60px;
     width: 627px;
   }
+  @media ${device.desktop} {
+    margin-left: 300px;
+    gap: 90px;
+    width: 627px;
+  }
 `;
 
 export const All = styled.div`
@@ -46,6 +51,9 @@ export const All = styled.div`
   }
   @media ${device.tablet} {
     font-size: 18px;
+  }
+  @media ${device.desktop} {
+    font-size: 27px;
   }
 `;
 
@@ -70,6 +78,10 @@ export const Title = styled.h1`
   @media ${device.laptop} {
     margin-left: 520px;
     font-size: 35px;
+  }
+  @media ${device.desktop} {
+    margin-left: 720px;
+    font-size: 40px;
   }
 `;
 
@@ -127,6 +139,12 @@ export const Input = styled.input`
     height: 43.3px;
     width: 230px;
   }
+  @media ${device.desktop} {
+    margin-left: 1430px;
+    margin-top: 170px;
+    height: 43.3px;
+    width: 230px;
+  }
 `;
 
 export const Search = styled.p`
@@ -149,6 +167,11 @@ export const Search = styled.p`
   }
   @media ${device.laptop} {
     margin-left: 1160px;
+    margin-top: 170px;
+    padding: 10px;
+  }
+  @media ${device.desktop} {
+    margin-left: 1650px;
     margin-top: 170px;
     padding: 10px;
   }

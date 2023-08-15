@@ -79,7 +79,7 @@ export const SaleProduct = styled.div`
     gap: 0;
   }
   @media ${device.desktop} {
-    margin-left: 50px;
+    margin-left: 110px;
     gap: 0;
   }
 `;

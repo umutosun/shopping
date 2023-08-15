@@ -16,6 +16,11 @@ export const Wrapper = styled.div`
     margin-top: 280px;
     height: 680px;
   }
+  @media ${device.desktop} {
+    width: 100%;
+    margin-top: 280px;
+    height: 780px;
+  }
 `;
 export const WrapperInfo = styled.div`
   display: flex;
@@ -42,16 +47,29 @@ export const Communication = styled.div`
     margin-top: 150px;
     gap: 0px;
   }
+  @media ${device.desktop} {
+    flex-direction: row;
+    margin-left: 210px;
+    margin-top: 160px;
+    gap: 0px;
+  }
 `;
 
 export const CommOne = styled.div``;
 export const Header = styled.div`
   display: flex;
   gap: 7px;
+  @media ${device.desktop} {
+    gap: 12px;
+  }
 `;
 export const Icon = styled.img`
   width: 39px;
   height: 39px;
+  @media ${device.desktop} {
+    width: 49px;
+    height: 49px;
+  }
 `;
 export const Title = styled.p`
   color: #22262a;
@@ -61,6 +79,9 @@ export const Title = styled.p`
   font-weight: 700;
   line-height: normal;
   margin-top: 5px;
+  @media ${device.desktop} {
+    font-size: 24px;
+  }
 `;
 export const Info = styled.p`
   width: 221.102px;
@@ -71,6 +92,10 @@ export const Info = styled.p`
   font-weight: 400;
   line-height: normal;
   margin-top: 16px;
+  @media ${device.desktop} {
+    font-size: 16px;
+    margin-left: 5px;
+  }
 `;
 
 export const CommTwo = styled.div`
@@ -90,6 +115,11 @@ export const CommTwo = styled.div`
     margin-top: 0px;
     margin-bottom: 0px;
   }
+  @media ${device.desktop} {
+    margin-left: 400px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 `;
 
 export const TitleTwo = styled.p`
@@ -100,6 +130,9 @@ export const TitleTwo = styled.p`
   line-height: normal;
   @media ${device.mobileM} {
     margin-top: 5px;
+  }
+  @media ${device.desktop} {
+    font-size: 26px;
   }
 `;
 export const InfoTwo = styled.p`
@@ -112,10 +145,16 @@ export const InfoTwo = styled.p`
   width: 198px;
   margin-top: 19px;
   margin-bottom: 24px;
+  @media ${device.desktop} {
+    font-size: 16px;
+  }
 `;
 export const IconTwo = styled.div`
   display: flex;
   gap: 30px;
+  @media ${device.desktop} {
+    gap: 50px;
+  }
 `;
 export const Facebook = styled.img``;
 export const Twitter = styled.img``;
@@ -131,6 +170,9 @@ export const CommThree = styled.div`
   @media ${device.laptop} {
     margin-left: 180px;
   }
+  @media ${device.desktop} {
+    margin-left: 280px;
+  }
 `;
 
 export const TitleThree = styled.p`
@@ -139,6 +181,9 @@ export const TitleThree = styled.p`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  @media ${device.desktop} {
+    font-size: 26px;
+  }
 `;
 export const InfoThree = styled.p`
   width: 148.109px;
@@ -149,6 +194,9 @@ export const InfoThree = styled.p`
   line-height: normal;
   margin-top: 19px;
   font-family: "proxima-nova", sans-serif;
+  @media ${device.desktop} {
+    font-size: 20px;
+  }
 `;
 
 export const About = styled.div`
@@ -173,6 +221,11 @@ export const About = styled.div`
     gap: 200px;
     margin-top: 370px;
   }
+  @media ${device.desktop} {
+    margin-left: 210px;
+    gap: 200px;
+    margin-top: 470px;
+  }
 `;
 export const Information = styled.div``;
 export const InformationTitle = styled.p`
@@ -188,6 +241,10 @@ export const InformationTitle = styled.p`
   @media ${device.tablet} {
     margin-bottom: 29px;
   }
+  @media ${device.desktop} {
+    margin-bottom: 29px;
+    font-size: 26px;
+  }
 `;
 export const AboutUs = styled.p`
   color: #262626;
@@ -195,6 +252,9 @@ export const AboutUs = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  @media ${device.desktop} {
+    font-size: 22px;
+  }
 `;
 export const InformationP = styled.p`
   color: #262626;
@@ -202,6 +262,9 @@ export const InformationP = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  @media ${device.desktop} {
+    font-size: 22px;
+  }
 `;
 export const PrivacyPolicy = styled.p`
   color: #262626;
@@ -209,6 +272,9 @@ export const PrivacyPolicy = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  @media ${device.desktop} {
+    font-size: 22px;
+  }
 `;
 export const Terms = styled.p`
   color: #262626;
@@ -216,6 +282,9 @@ export const Terms = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  @media ${device.desktop} {
+    font-size: 22px;
+  }
 `;
 export const Line = styled.img`
   width: 1150.86px;
@@ -236,6 +305,11 @@ export const Line = styled.img`
     margin-left: 150px;
     width: 1150.86px;
     margin-top: 600px;
+  }
+  @media ${device.desktop} {
+    margin-left: 150px;
+    width: 1550.86px;
+    margin-top: 700px;
   }
 `;
 export const Copyright = styled.p`
@@ -260,6 +334,11 @@ export const Copyright = styled.p`
     margin-left: 150px;
     margin-top: 630px;
   }
+  @media ${device.laptop} {
+    margin-left: 150px;
+    margin-top: 730px;
+    font-size: 22px;
+  }
 `;
 export const Payment = styled.div`
   position: absolute;
@@ -278,6 +357,10 @@ export const Payment = styled.div`
   @media ${device.laptop} {
     margin-top: 630px;
     margin-left: 1070px;
+  }
+  @media ${device.laptop} {
+    margin-top: 730px;
+    margin-left: 1470px;
   }
 `;
 export const PaymentIcon = styled.img``;
