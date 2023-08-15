@@ -50,7 +50,7 @@ export const SaleProduct = styled.div`
   gap: 0;
   @media ${device.mobileM} {
     gap: 0px;
-    margin-left: 3px;
+    margin-left: 10px;
   }
   @media ${device.tablet} {
     margin-left: 40px;
