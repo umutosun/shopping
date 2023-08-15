@@ -48,6 +48,12 @@ export const Image = styled.img`
     --_i: 100%;
     transition: 0.3s, background-size 0.3s 0.3s;
     width: 60%;
+    @media ${device.desktop} {
+      width: 70%;
+    }
+  }
+  @media ${device.desktop} {
+    width: 60%;
   }
 `;
 export const Info = styled.div``;

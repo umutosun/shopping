@@ -32,8 +32,15 @@ export const Communication = styled.div`
   }
   @media ${device.tablet} {
     flex-direction: row;
+    margin-left: 10px;
+    margin-top: 10px;
+    gap: 50px;
+  }
+  @media ${device.laptop} {
+    flex-direction: row;
     margin-left: 130px;
     margin-top: 150px;
+    gap: 0px;
   }
 `;
 
@@ -74,6 +81,11 @@ export const CommTwo = styled.div`
     margin-bottom: 15px;
   }
   @media ${device.tablet} {
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  @media ${device.laptop} {
     margin-left: 300px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -114,6 +126,9 @@ export const CommThree = styled.div`
     margin-left: 0px;
   }
   @media ${device.tablet} {
+    margin-left: 10px;
+  }
+  @media ${device.laptop} {
     margin-left: 180px;
   }
 `;
@@ -149,6 +164,11 @@ export const About = styled.div`
     flex-wrap: wrap;
   }
   @media ${device.tablet} {
+    margin-left: 10px;
+    gap: 50px;
+    margin-top: 250px;
+  }
+  @media ${device.laptop} {
     margin-left: 130px;
     gap: 200px;
     margin-top: 370px;
@@ -208,6 +228,11 @@ export const Line = styled.img`
     margin-top: 820px;
   }
   @media ${device.tablet} {
+    margin-left: 10px;
+    width: 750.86px;
+    margin-top: 450px;
+  }
+  @media ${device.laptop} {
     margin-left: 150px;
     width: 1150.86px;
     margin-top: 600px;
@@ -228,6 +253,10 @@ export const Copyright = styled.p`
     margin-top: 800px;
   }
   @media ${device.tablet} {
+    margin-left: 10px;
+    margin-top: 470px;
+  }
+  @media ${device.laptop} {
     margin-left: 150px;
     margin-top: 630px;
   }
@@ -243,6 +272,10 @@ export const Payment = styled.div`
     margin-top: 830px;
   }
   @media ${device.tablet} {
+    margin-top: 460px;
+    margin-left: 500px;
+  }
+  @media ${device.laptop} {
     margin-top: 630px;
     margin-left: 1070px;
   }

@@ -2,14 +2,16 @@ import styled from "styled-components";
 import { device } from "../../style/device";
 
 export const Wrapper = styled.div`
-  width: 90%;
+  width: 100%;
   display: flex;
   height: 165px;
   @media ${device.mobileM} {
     height: 120px;
+    width: 90%;
   }
   @media ${device.tablet} {
     height: 165px;
+    width: 100%;
   }
 `;
 
@@ -24,6 +26,11 @@ export const Icon = styled.img`
     height: 24px;
   }
   @media ${device.tablet} {
+    margin-left: 25px;
+    width: 44px;
+    height: 44px;
+  }
+  @media ${device.laptop} {
     margin-left: 102px;
     width: 44px;
     height: 44px;
@@ -46,9 +53,21 @@ export const Title = styled.p`
     margin-right: 20px;
   }
   @media ${device.tablet} {
+    margin-left: 4px;
+    margin-top: 44px;
+    font-size: 16px;
+    margin-right: 40px;
+  }
+  @media ${device.laptop} {
     margin-left: 0;
     margin-top: 54px;
     font-size: 18px;
+    margin-right: 240px;
+  }
+  @media ${device.desktop} {
+    margin-left: 5px;
+    margin-top: 45px;
+    font-size: 35px;
     margin-right: 240px;
   }
 `;
@@ -67,9 +86,19 @@ export const Category = styled.div`
     margin-top: 45px;
   }
   @media ${device.tablet} {
+    gap: 35px;
+    font-size: 18px;
+    margin-top: 53px;
+  }
+  @media ${device.laptop} {
     gap: 82px;
     font-size: 24px;
     margin-top: 53px;
+  }
+  @media ${device.desktop} {
+    gap: 110px;
+    font-size: 35px;
+    margin-top: 45px;
   }
 `;
 export const Electronics = styled.p`
@@ -108,7 +137,17 @@ export const Basket = styled.div`
     margin-right: 0;
   }
   @media ${device.tablet} {
+    margin-left: 41px;
+    margin-top: 52px;
+    margin-right: 56px;
+  }
+  @media ${device.laptop} {
     margin-left: 61px;
+    margin-top: 57px;
+    margin-right: 56px;
+  }
+  @media ${device.desktop} {
+    margin-left: 91px;
     margin-top: 57px;
     margin-right: 56px;
   }

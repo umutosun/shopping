@@ -18,6 +18,11 @@ export const Category = styled.div`
     width: 98%;
   }
   @media ${device.tablet} {
+    margin-left: 50px;
+    gap: 60px;
+    width: 627px;
+  }
+  @media ${device.laptop} {
     margin-left: 250px;
     gap: 60px;
     width: 627px;
@@ -59,6 +64,10 @@ export const Title = styled.h1`
     font-size: 22px;
   }
   @media ${device.tablet} {
+    margin-left: 190px;
+    font-size: 35px;
+  }
+  @media ${device.laptop} {
     margin-left: 520px;
     font-size: 35px;
   }
@@ -84,6 +93,9 @@ export const WrapperProduct = styled.div`
   @media ${device.laptopL} {
     margin-left: 150px;
   }
+  @media ${device.desktop} {
+    gap: 80px;
+  }
 `;
 
 export const Input = styled.input`
@@ -104,6 +116,12 @@ export const Input = styled.input`
     width: 150px;
   }
   @media ${device.tablet} {
+    margin-left: 450px;
+    margin-top: 70px;
+    height: 35.3px;
+    width: 230px;
+  }
+  @media ${device.laptop} {
     margin-left: 930px;
     margin-top: 170px;
     height: 43.3px;
@@ -125,8 +143,14 @@ export const Search = styled.p`
     padding: 0.2px 0.5px;
   }
   @media ${device.tablet} {
+    margin-left: 620px;
+    margin-top: 70px;
+    padding: 5px;
+  }
+  @media ${device.laptop} {
     margin-left: 1160px;
     margin-top: 170px;
+    padding: 10px;
   }
 `;
 export const Sneakers = styled.div`
@@ -144,6 +168,12 @@ export const Sneakers = styled.div`
   @media ${device.tablet} {
     width: 100%;
     gap: 0;
+    height: 420px;
+    margin-top: 149px;
+  }
+  @media ${device.laptop} {
+    width: 100%;
+    gap: 0;
     height: 550px;
     margin-top: 149px;
   }
@@ -157,6 +187,10 @@ export const Info = styled.div`
     margin-top: 20px;
   }
   @media ${device.tablet} {
+    margin-left: 30px;
+    margin-top: 60px;
+  }
+  @media ${device.laptop} {
     margin-left: 110px;
     margin-top: 140px;
   }
@@ -172,7 +206,13 @@ export const P1 = styled.p`
     font-size: 12px;
   }
   @media ${device.tablet} {
+    font-size: 24px;
+  }
+  @media ${device.laptop} {
     font-size: 55px;
+  }
+  @media ${device.desktop} {
+    font-size: 60px;
   }
 `;
 
@@ -188,7 +228,13 @@ export const P2 = styled.p`
     font-size: 10px;
   }
   @media ${device.tablet} {
+    font-size: 15px;
+  }
+  @media ${device.laptop} {
     font-size: 23px;
+  }
+  @media ${device.desktop} {
+    font-size: 28px;
   }
 `;
 
@@ -203,7 +249,13 @@ export const P3 = styled.p`
     font-size: 8px;
   }
   @media ${device.tablet} {
+    font-size: 15px;
+  }
+  @media ${device.laptop} {
     font-size: 20px;
+  }
+  @media ${device.desktop} {
+    font-size: 25px;
   }
 `;
 
@@ -213,7 +265,13 @@ export const Underline = styled.img`
     width: 45px;
   }
   @media ${device.tablet} {
+    width: 80px;
+  }
+  @media ${device.laptop} {
     width: 110px;
+  }
+  @media ${device.desktop} {
+    width: 125px;
   }
 `;
 
@@ -227,8 +285,18 @@ export const Image = styled.img`
     margin-top: -30px;
   }
   @media ${device.tablet} {
+    width: 600.564px;
+    height: 402.935px;
+    margin-top: -50px;
+  }
+  @media ${device.laptop} {
     width: 700.564px;
     height: 502.935px;
+    margin-top: -60px;
+  }
+  @media ${device.desktop} {
+    width: 800.564px;
+    height: 602.935px;
     margin-top: -60px;
   }
 `;
@@ -246,8 +314,18 @@ export const Article = styled.div`
   }
   @media ${device.tablet} {
     flex-direction: row;
+    gap: 80px;
+    margin-left: 10px;
+  }
+  @media ${device.laptop} {
+    flex-direction: row;
     gap: 200px;
     margin-left: 220px;
+  }
+  @media ${device.desktop} {
+    flex-direction: row;
+    gap: 250px;
+    margin-left: 420px;
   }
 `;
 
@@ -405,7 +483,18 @@ export const ArticleInfo = styled.div`
     flex-direction: column;
   }
   @media ${device.tablet} {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 70px;
+  }
+  @media ${device.laptop} {
     flex-direction: row;
+    margin-left: 0px;
+  }
+  @media ${device.desktop} {
+    flex-direction: row;
+    margin-left: 200px;
+    gap: 100px;
   }
 `;
 
@@ -469,6 +558,9 @@ export const Tools = styled.div`
     gap: 50px;
   }
   @media ${device.tablet} {
+    gap: 50px;
+  }
+  @media ${device.laptop} {
     gap: 5px;
   }
 `;
@@ -610,9 +702,19 @@ export const ArticleProduct = styled.div`
     width: 350px;
   }
   @media ${device.tablet} {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 170px;
+  }
+  @media ${device.laptop} {
     flex-direction: row;
     gap: 0px;
     margin-left: 100px;
+  }
+  @media ${device.desktop} {
+    flex-direction: row;
+    gap: 70px;
+    margin-left: 250px;
   }
 `;
 
