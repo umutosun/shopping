@@ -13,6 +13,10 @@ export const Image = styled.img`
     width: 100%;
     height: 653.734px;
   }
+  @media ${device.desktop} {
+    width: 100%;
+    height: 653.734px;
+  }
 `;
 export const Sale = styled.p`
   position: absolute;
@@ -75,7 +79,7 @@ export const SaleProduct = styled.div`
     gap: 0;
   }
   @media ${device.desktop} {
-    margin-left: 130px;
+    margin-left: 50px;
     gap: 0;
   }
 `;
