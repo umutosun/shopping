@@ -78,6 +78,9 @@ export const UnitPriceTitle = styled.p`
   @media ${device.mobileM} {
     font-size: 10px;
   }
+  @media ${device.mobileL} {
+    margin-left: -12px;
+  }
   @media ${device.tablet} {
     font-size: 20px;
   }

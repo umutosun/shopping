@@ -46,6 +46,9 @@ export const ProductInfoLeft = styled.div`
     width: 175px;
     margin-left: 10px;
   }
+  @media ${device.mobileL} {
+    margin-left: -50px;
+  }
   @media ${device.tablet} {
     width: 420px;
     margin-left: 0;
