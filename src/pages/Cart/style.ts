@@ -8,7 +8,7 @@ export const WrapperTitle = styled.div`
   margin-top: 15px;
   @media ${device.mobileM} {
     margin-left: 0px;
-    gap: 140px;
+    gap: 105px;
   }
   @media ${device.tablet} {
     margin-left: 100px;
@@ -24,7 +24,7 @@ export const ProductTitle = styled.p`
   line-height: normal;
   margin-left: 50px;
   @media ${device.mobileM} {
-    margin-left: 5px;
+    margin-left: 35px;
     font-size: 10px;
   }
   @media ${device.tablet} {
@@ -84,15 +84,21 @@ export const UnitPriceTitle = styled.p`
 `;
 export const TotalAmount = styled.div`
   display: flex;
-  justify-content: end;
-  margin-right: 100px;
-  gap: 160px;
+  flex-direction: column;
+  margin-left: 950px;
   @media ${device.mobileM} {
-    gap: 10px;
+    margin-left: 50px;
+  }
+  @media ${device.mobileL} {
+    margin-left: 70px;
   }
   @media ${device.tablet} {
-    gap: 160px;
+    margin-left: 950px;
   }
+`;
+export const WrapperAmount = styled.div`
+  display: flex;
+  gap: 100px;
 `;
 export const TotalAmountTitle = styled.p`
   color: #22262a;
@@ -123,7 +129,6 @@ export const Amount = styled.p`
 export const BuyButton = styled.button`
   width: 274.12px;
   height: 40px;
-  margin-left: 920px;
   margin-top: 25px;
   background-color: #33a0ff;
   border: 0px;
@@ -135,15 +140,7 @@ export const BuyButton = styled.button`
   line-height: normal;
   cursor: pointer;
   @media ${device.mobileM} {
-    margin-left: 140px;
-    width: 104.12px;
-    height: 30px;
-    margin-top: 10px;
   }
   @media ${device.tablet} {
-    margin-left: 920px;
-    width: 274.12px;
-    height: 40px;
-    margin-top: 25px;
   }
 `;

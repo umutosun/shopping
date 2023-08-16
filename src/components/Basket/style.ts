@@ -9,7 +9,7 @@ export const WrapperBasket = styled.div`
   gap: 10px;
   @media ${device.mobileM} {
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 20px;
   }
   @media ${device.tablet} {
     margin: 55px;
@@ -22,7 +22,7 @@ export const Wrapper = styled.div``;
 export const Line = styled.img`
   width: 100%;
   @media ${device.mobileM} {
-    width: 90vh;
+    width: 100%;
   }
   @media ${device.tablet} {
     width: 100%;

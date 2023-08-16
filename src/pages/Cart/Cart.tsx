@@ -47,10 +47,12 @@ function Cart() {
             <Basket key={i} product={product} />
           ))}
           <S.TotalAmount>
-            <S.TotalAmountTitle>Total </S.TotalAmountTitle>
-            <S.Amount>{totalAmount}$</S.Amount>
+            <S.WrapperAmount>
+              <S.TotalAmountTitle>Total </S.TotalAmountTitle>
+              <S.Amount>{totalAmount}$</S.Amount>
+            </S.WrapperAmount>
+            <S.BuyButton>BUY</S.BuyButton>
           </S.TotalAmount>
-          <S.BuyButton>BUY</S.BuyButton>
         </div>
       ) : (
         <div>Add product to cart</div>
