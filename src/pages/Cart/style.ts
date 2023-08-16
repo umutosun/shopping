@@ -11,8 +11,16 @@ export const WrapperTitle = styled.div`
     gap: 105px;
   }
   @media ${device.tablet} {
+    margin-left: 40px;
+    gap: 200px;
+  }
+  @media ${device.laptop} {
     margin-left: 100px;
-    gap: 600px;
+    gap: 575px;
+  }
+  @media ${device.desktop} {
+    margin-left: 100px;
+    gap: 875px;
   }
 `;
 export const TitleProduct = styled.div``;
@@ -29,7 +37,15 @@ export const ProductTitle = styled.p`
   }
   @media ${device.tablet} {
     margin-left: 50px;
+    font-size: 18px;
+  }
+  @media ${device.laptop} {
+    margin-left: 50px;
     font-size: 20px;
+  }
+  @media ${device.desktop} {
+    margin-left: 50px;
+    font-size: 30px;
   }
 `;
 export const OtherTitle = styled.div`
@@ -52,7 +68,13 @@ export const PriceTitle = styled.p`
     font-size: 10px;
   }
   @media ${device.tablet} {
+    font-size: 18px;
+  }
+  @media ${device.laptop} {
     font-size: 20px;
+  }
+  @media ${device.desktop} {
+    font-size: 30px;
   }
 `;
 
@@ -66,7 +88,13 @@ export const QuantityTitle = styled.p`
     font-size: 10px;
   }
   @media ${device.tablet} {
+    font-size: 18px;
+  }
+  @media ${device.laptop} {
     font-size: 20px;
+  }
+  @media ${device.desktop} {
+    font-size: 30px;
   }
 `;
 export const UnitPriceTitle = styled.p`
@@ -82,7 +110,15 @@ export const UnitPriceTitle = styled.p`
     margin-left: -12px;
   }
   @media ${device.tablet} {
+    font-size: 18px;
+  }
+  @media ${device.laptop} {
     font-size: 20px;
+    margin-left: 0;
+  }
+  @media ${device.desktop} {
+    font-size: 30px;
+    margin-left: 10px;
   }
 `;
 export const TotalAmount = styled.div`
@@ -96,7 +132,13 @@ export const TotalAmount = styled.div`
     margin-left: 70px;
   }
   @media ${device.tablet} {
+    margin-left: 250px;
+  }
+  @media ${device.laptop} {
     margin-left: 950px;
+  }
+  @media ${device.desktop} {
+    margin-left: 1350px;
   }
 `;
 export const WrapperAmount = styled.div`
@@ -115,6 +157,9 @@ export const TotalAmountTitle = styled.p`
   @media ${device.tablet} {
     font-size: 30px;
   }
+  @media ${device.desktop} {
+    font-size: 34px;
+  }
 `;
 export const Amount = styled.p`
   font-size: 30px;
@@ -126,6 +171,9 @@ export const Amount = styled.p`
   }
   @media ${device.tablet} {
     font-size: 30px;
+  }
+  @media ${device.desktop} {
+    font-size: 34px;
   }
 `;
 
@@ -145,5 +193,10 @@ export const BuyButton = styled.button`
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
+  }
+  @media ${device.desktop} {
+    width: 294.12px;
+    height: 45px;
+    font-size: 22px;
   }
 `;

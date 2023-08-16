@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
   }
   @media ${device.desktop} {
     height: 165px;
-    width: 90%;
+    width: 100%;
   }
 `;
 
@@ -71,8 +71,8 @@ export const Title = styled.p`
   @media ${device.desktop} {
     margin-left: 5px;
     margin-top: 45px;
-    font-size: 32px;
-    margin-right: 220px;
+    font-size: 30px;
+    margin-right: 210px;
   }
 `;
 export const Category = styled.div`
@@ -103,6 +103,7 @@ export const Category = styled.div`
     gap: 110px;
     font-size: 35px;
     margin-top: 45px;
+    margin-left: 200px;
   }
 `;
 export const Electronics = styled.p`
