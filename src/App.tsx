@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 
 import Home from "./pages/Home/Home";
 import Detail from "./pages/Detail";
-import Cart from "./pages/Cart";
+import Cart from "./pages/Cart/Cart";
 
 import "./App.css";
 import Footer from "./components/Footer/Footer";

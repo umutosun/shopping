@@ -13,71 +13,153 @@ export const WrapperBasket = styled.div`
   }
   @media ${device.tablet} {
     margin: 55px;
-    flex-direction: row;
+    margin-top: 30px;
+    flex-direction: column;
+  }
+`;
+export const Wrapper = styled.div``;
+
+export const Line = styled.img`
+  width: 100%;
+  @media ${device.mobileM} {
+    width: 90vh;
+  }
+  @media ${device.tablet} {
+    width: 100%;
   }
 `;
 
-export const Image = styled.img`
-  width: 100px;
-  margin-right: 10px;
+export const ProductInfo = styled.div`
+  display: flex;
+  gap: 350px;
   @media ${device.mobileM} {
-    width: 80px;
+    gap: 50px;
   }
   @media ${device.tablet} {
-    width: 100px;
+    gap: 350px;
   }
 `;
-export const Title = styled.h2`
-  width: 900px;
+export const ProductInfoLeft = styled.div`
+  display: flex;
+  width: 420px;
   @media ${device.mobileM} {
-    font-size: 15px;
-    width: 300px;
+    width: 175px;
+    margin-left: 10px;
   }
   @media ${device.tablet} {
-    font-size: 30px;
+    width: 420px;
     margin-left: 0;
   }
 `;
-export const Sale = styled.div`
+export const ButtonRemove = styled.img`
+  cursor: pointer;
+  width: 24px;
+  height: 23px;
+  margin-top: 50px;
+  margin-right: 50px;
   @media ${device.mobileM} {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 35px;
-    margin-bottom: -15px;
+    margin-right: 10px;
   }
   @media ${device.tablet} {
-    flex-direction: row;
-    gap: 35px;
-    margin-top: 0;
+    margin-right: 50px;
+  }
+`;
+export const Image = styled.img`
+  margin-right: 10px;
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  @media ${device.mobileM} {
+    margin-right: 0px;
+    width: 50px;
+    height: 50px;
+    margin-top: 40px;
+  }
+  @media ${device.tablet} {
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+  }
+`;
+export const Title = styled.h2`
+  color: #262626;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 235px;
+  margin-left: 10px;
+  margin-top: 50px;
+  @media ${device.mobileM} {
+    font-size: 10px;
+    margin-top: 40px;
+    width: 55px;
+  }
+  @media ${device.tablet} {
+    font-size: 16px;
+    margin-top: 50px;
+    width: 235px;
+  }
+`;
+export const ProductInfoRight = styled.div`
+  display: flex;
+  width: 420px;
+  gap: 75px;
+  @media ${device.mobileM} {
+    gap: 20px;
+    width: 175px;
+    margin-left: -50px;
+  }
+  @media ${device.tablet} {
+    gap: 75px;
+    width: 420px;
   }
 `;
 export const Price = styled.p`
-  width: 50px;
-  font-size: 25px;
-  margin-right: 30px;
+  color: #262626;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 65px;
+  height: 21px;
+  margin-top: 45px;
   @media ${device.mobileM} {
-    font-size: 20px;
-    margin-left: 15px;
+    font-size: 12px;
+    width: 50px;
+    height: 21px;
   }
   @media ${device.tablet} {
-    margin-top: 0;
-    font-size: 25px;
-    margin-left: 0px;
+    font-size: 18px;
+    width: 65px;
+    height: 21px;
   }
 `;
-
 export const Button = styled.button`
   display: flex;
-  background-color: white;
+  background-color: #f6f7f8;
   border: 1px solid gray;
   padding: 15px;
   justify-content: center;
   align-items: center;
   height: 30px;
-  min-width: 100px;
-  border-radius: 12px;
-  border: 1px solid gray;
+  width: 114px;
+  border: 1px solid #f6f7f8;
+  margin-top: 45px;
+  width: 114px;
+  @media ${device.mobileM} {
+    width: 94px;
+    height: 10px;
+    padding: 10px;
+  }
+  @media ${device.tablet} {
+    width: 114px;
+    height: 30px;
+    padding: 15px;
+  }
 `;
 
 export const ButtonDecrement = styled.p`
@@ -86,10 +168,28 @@ export const ButtonDecrement = styled.p`
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
+  color: #33a0ff;
+  @media ${device.mobileM} {
+    font-size: 12px;
+  }
+  @media ${device.tablet} {
+    font-size: 18px;
+  }
 `;
 
 export const Quantity = styled.p`
-  font-size: 25px;
+  color: #262626;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  @media ${device.mobileM} {
+    font-size: 12px;
+  }
+  @media ${device.tablet} {
+    font-size: 18px;
+  }
 `;
 
 export const ButtonIncrement = styled.p`
@@ -98,16 +198,27 @@ export const ButtonIncrement = styled.p`
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
+  color: #33a0ff;
+  @media ${device.mobileM} {
+    font-size: 12px;
+  }
+  @media ${device.tablet} {
+    font-size: 20px;
+  }
 `;
-export const ButtonRemove = styled.button`
-  height: 40px;
-  width: 130px;
-  border-radius: 12px;
-  border: 0;
-  cursor: pointer;
-  background-color: #e53a40;
-  color: white;
-  &:hover {
-    background-color: #519d9e;
+export const UnitPrice = styled.p`
+  width: 65px;
+  height: 21px;
+  margin-top: 45px;
+  color: #262626;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  @media ${device.mobileM} {
+    font-size: 12px;
+  }
+  @media ${device.tablet} {
+    font-size: 18px;
   }
 `;

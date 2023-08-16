@@ -7,7 +7,10 @@ import {
   icreaseBasketItem,
 } from "../../features/basketSlice";
 
+import remove_icon from "../../assets/remove_icon.png";
+import basket_line from "../../assets/basket_line.png";
 import * as S from "./style";
+import Navbar from "../Navbar/Navbar";
 
 const Basket = ({ product }: any) => {
   const dispatch = useAppDispatch();
@@ -30,17 +33,26 @@ const Basket = ({ product }: any) => {
     <div>
       {
         <S.WrapperBasket>
-          <S.Image src={product.image} alt="" />
-          <S.Title>{product.title}</S.Title>
-          <S.Sale>
-            <S.Button>
-              <S.ButtonDecrement onClick={decrement}>-</S.ButtonDecrement>
-              <S.Quantity>{product.quantity}</S.Quantity>
-              <S.ButtonIncrement onClick={increment}>+</S.ButtonIncrement>
-            </S.Button>
-            <S.Price>{product.price * product.quantity}$</S.Price>
-            <S.ButtonRemove onClick={remove}>Remove Product</S.ButtonRemove>
-          </S.Sale>
+          <S.Line src={basket_line}></S.Line>
+          <S.ProductInfo>
+            <S.ProductInfoLeft>
+              <S.ButtonRemove
+                onClick={remove}
+                src={remove_icon}></S.ButtonRemove>
+              <S.Image src={product.image} alt="" />
+              <S.Title>{product.title}</S.Title>
+            </S.ProductInfoLeft>
+
+            <S.ProductInfoRight>
+              <S.Price>{product.price * product.quantity}$</S.Price>
+              <S.Button>
+                <S.ButtonDecrement onClick={decrement}>-</S.ButtonDecrement>
+                <S.Quantity>{product.quantity}</S.Quantity>
+                <S.ButtonIncrement onClick={increment}>+</S.ButtonIncrement>
+              </S.Button>
+              <S.UnitPrice>{product.price}$</S.UnitPrice>
+            </S.ProductInfoRight>
+          </S.ProductInfo>
         </S.WrapperBasket>
       }
     </div>
