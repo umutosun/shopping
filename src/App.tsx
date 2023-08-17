@@ -7,7 +7,6 @@ import Detail from "./pages/Detail";
 import Cart from "./pages/Cart/Cart";
 
 import "./App.css";
-import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
           <Route path="/prodcuts/:id" element={<Detail />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
-        <Footer />
       </Router>
     </div>
   );

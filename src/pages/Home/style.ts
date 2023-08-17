@@ -18,18 +18,18 @@ export const Category = styled.div`
     width: 98%;
   }
   @media ${device.tablet} {
-    margin-left: 50px;
-    gap: 60px;
+    margin-left: 100px;
+    gap: 0px;
     width: 627px;
   }
   @media ${device.laptop} {
-    margin-left: 250px;
-    gap: 60px;
+    margin-left: 140px;
+    gap: 20px;
     width: 627px;
   }
   @media ${device.desktop} {
-    margin-left: 300px;
-    gap: 90px;
+    margin-left: 200px;
+    gap: 10px;
     width: 627px;
   }
 `;
@@ -50,10 +50,10 @@ export const All = styled.div`
     font-size: 11.3px;
   }
   @media ${device.tablet} {
-    font-size: 18px;
+    font-size: 15px;
   }
   @media ${device.desktop} {
-    font-size: 27px;
+    font-size: 22px;
   }
 `;
 
@@ -136,7 +136,7 @@ export const Input = styled.input`
   @media ${device.laptop} {
     margin-left: 930px;
     margin-top: 170px;
-    height: 43.3px;
+    height: 30.3px;
     width: 230px;
   }
   @media ${device.desktop} {
@@ -168,7 +168,7 @@ export const Search = styled.p`
   @media ${device.laptop} {
     margin-left: 1160px;
     margin-top: 170px;
-    padding: 10px;
+    padding: 3.5px;
   }
   @media ${device.desktop} {
     margin-left: 1650px;

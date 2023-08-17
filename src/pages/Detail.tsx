@@ -9,6 +9,7 @@ import {
 } from "../features/productSlice";
 
 import ProductDetail from "../components/ProductDetail/ProductDetail";
+import Footer from "../components/Footer/Footer";
 
 const Detail = () => {
   const { id } = useParams();
@@ -38,6 +39,7 @@ const Detail = () => {
   return (
     <div>
       <ProductDetail detail={detail} />
+      <Footer />
     </div>
   );
 };

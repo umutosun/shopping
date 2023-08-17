@@ -26,6 +26,7 @@ import article_three_shoes from "../../assets/article_three_shoes.png";
 import article_rate from "../../assets/article_rate.png";
 
 import * as S from "./style";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   const [categories, setCategories] = useState<string>("");
@@ -59,9 +60,6 @@ const Home = () => {
   useEffect(() => {
     setSearch(data);
   }, [data]);
-  if (loading) {
-    return <h1>Loading...</h1>;
-  }
 
   return (
     <S.Wrapper>
@@ -91,11 +89,13 @@ const Home = () => {
           />
         ))}
       </S.Category>
-
-      <S.WrapperProduct>
-        {data && search.map((data, i) => <ProductCard key={i} data={data} />)}
-      </S.WrapperProduct>
-
+      {loading ? (
+        <h1>Loading...</h1>
+      ) : (
+        <S.WrapperProduct>
+          {data && search.map((data, i) => <ProductCard key={i} data={data} />)}
+        </S.WrapperProduct>
+      )}
       <S.Sneakers>
         <S.Info>
           <S.P1>Adidas Men Running Sneakers</S.P1>
@@ -217,6 +217,7 @@ const Home = () => {
           </S.ProductOne>
         </S.ArticleProduct>
       </S.ArticleThree>
+      <Footer />
     </S.Wrapper>
   );
 };

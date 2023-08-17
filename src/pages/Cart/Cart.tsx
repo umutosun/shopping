@@ -8,6 +8,7 @@ import Basket from "../../components/Basket/Basket";
 import { Product } from "../../types/product";
 
 import * as S from "./style";
+import Footer from "../../components/Footer/Footer";
 
 function Cart() {
   const dispatch = useAppDispatch();
@@ -57,6 +58,7 @@ function Cart() {
       ) : (
         <div>Add product to cart</div>
       )}
+      <Footer />
     </div>
   );
 }

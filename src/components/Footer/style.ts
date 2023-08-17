@@ -6,6 +6,8 @@ export const Wrapper = styled.div`
   height: 680px;
   margin-top: 280px;
   display: flex;
+  position: sticky;
+  bottom: 1;
   @media ${device.mobileM} {
     width: 100%;
     margin-top: 180px;

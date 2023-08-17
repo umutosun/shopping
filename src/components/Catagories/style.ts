@@ -9,7 +9,13 @@ export const Category = styled.div`
     margin-left: 0;
   }
   @media ${device.tablet} {
-    margin-left: 15px;
+    margin-left: 30px;
+  }
+  @media ${device.laptop} {
+    margin-left: 30px;
+  }
+  @media ${device.desktop} {
+    margin-left: 80px;
   }
 `;
 export const P = styled.p`
@@ -27,9 +33,15 @@ export const P = styled.p`
     font-size: 11.3px;
   }
   @media ${device.tablet} {
-    font-size: 17px;
+    font-size: 15px;
+    width: 130px;
+  }
+  @media ${device.laptop} {
+    font-size: 15px;
+    width: 140px;
   }
   @media ${device.desktop} {
-    font-size: 27px;
+    font-size: 22px;
+    width: 200px;
   }
 `;
