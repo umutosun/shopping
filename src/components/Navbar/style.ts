@@ -5,15 +5,12 @@ export const Wrapper = styled.div`
   width: 100%;
   display: flex;
   height: 165px;
+
   @media ${device.mobileM} {
     height: 120px;
     width: 90%;
   }
   @media ${device.tablet} {
-    height: 165px;
-    width: 100%;
-  }
-  @media ${device.desktop} {
     height: 165px;
     width: 100%;
   }
@@ -36,8 +33,6 @@ export const Icon = styled.img`
   }
   @media ${device.laptop} {
     margin-left: 82px;
-    width: 44px;
-    height: 44px;
   }
 `;
 
@@ -48,26 +43,30 @@ export const Title = styled.p`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-right: 240px;
   margin-top: 54px;
+  margin-right: 240px;
+
   @media ${device.mobileM} {
     margin-left: 5px;
     margin-top: 45px;
     font-size: 9px;
     margin-right: 20px;
   }
+
   @media ${device.tablet} {
     margin-left: 4px;
     margin-top: 44px;
     font-size: 16px;
     margin-right: 40px;
   }
+
   @media ${device.laptop} {
     margin-left: 0;
     margin-top: 54px;
     font-size: 18px;
     margin-right: 240px;
   }
+
   @media ${device.desktop} {
     margin-left: 5px;
     margin-top: 45px;
@@ -84,21 +83,25 @@ export const Category = styled.div`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+
   @media ${device.mobileM} {
     gap: 20px;
     font-size: 10.5px;
     margin-top: 45px;
   }
+
   @media ${device.tablet} {
     gap: 35px;
     font-size: 18px;
     margin-top: 53px;
   }
+
   @media ${device.laptop} {
     gap: 82px;
     font-size: 24px;
     margin-top: 53px;
   }
+
   @media ${device.desktop} {
     gap: 110px;
     font-size: 35px;
@@ -106,24 +109,28 @@ export const Category = styled.div`
     margin-left: 200px;
   }
 `;
+
 export const Electronics = styled.p`
   cursor: pointer;
   &:hover {
     color: #40bfff;
   }
 `;
+
 export const Jewelery = styled.p`
   cursor: pointer;
   &:hover {
     color: #40bfff;
   }
 `;
+
 export const MenClothing = styled.p`
   cursor: pointer;
   &:hover {
     color: #40bfff;
   }
 `;
+
 export const WomenClothing = styled.p`
   cursor: pointer;
   &:hover {
@@ -136,21 +143,25 @@ export const Basket = styled.div`
   margin-top: 57px;
   margin-right: 56px;
   margin-left: 61px;
+
   @media ${device.mobileM} {
     margin-left: 15px;
     margin-top: 40px;
     margin-right: 0;
   }
+
   @media ${device.tablet} {
     margin-left: 41px;
     margin-top: 52px;
     margin-right: 56px;
   }
+
   @media ${device.laptop} {
     margin-left: 61px;
     margin-top: 57px;
     margin-right: 56px;
   }
+
   @media ${device.desktop} {
     margin-left: 91px;
     margin-top: 57px;

@@ -1,15 +1,16 @@
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
+import styled from "styled-components";
 
-import { useAppDispatch, useAppSelector } from "../store";
+import { useAppDispatch, useAppSelector } from "../../store";
 
 import {
   fetchDetailProduct,
   resetDetailProduct,
-} from "../features/productSlice";
+} from "../../features/productSlice";
 
-import ProductDetail from "../components/ProductDetail/ProductDetail";
-import Footer from "../components/Footer/Footer";
+import ProductDetail from "../../components/ProductDetail/ProductDetail";
+import Footer from "../../components/Footer/Footer";
 
 const Detail = () => {
   const { id } = useParams();
@@ -30,18 +31,26 @@ const Detail = () => {
 
   if (loading) {
     return (
-      <div>
-        <h1>Loading...</h1>
-      </div>
+      <Loading>
+        <Title>Loading...</Title>
+      </Loading>
     );
   }
 
   return (
-    <div>
+    <Wrapper>
       <ProductDetail detail={detail} />
       <Footer />
-    </div>
+    </Wrapper>
   );
 };
 
 export default Detail;
+
+const Wrapper = styled.div``;
+
+const Loading = styled.div``;
+
+const Title = styled.h1`
+  text-align: center;
+`;

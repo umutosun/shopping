@@ -15,6 +15,7 @@ function Footer() {
               <S.Icon src={icon}></S.Icon>
               <S.Title>Umut's Market</S.Title>
             </S.Header>
+
             <S.Info>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -24,13 +25,15 @@ function Footer() {
 
           <S.CommTwo>
             <S.TitleTwo>Follow Us</S.TitleTwo>
+
             <S.InfoTwo>
               Since the 1500s, when an unknown printer took a galley of type and
               scrambled.
             </S.InfoTwo>
+
             <S.IconTwo>
               <S.Facebook src={facebook_icon} alt="facebook icon"></S.Facebook>
-              <S.Twitter src={twitter_icon}></S.Twitter>
+              <S.Twitter src={twitter_icon} alt="twitter icon"></S.Twitter>
             </S.IconTwo>
           </S.CommTwo>
 
@@ -48,6 +51,7 @@ function Footer() {
             <S.PrivacyPolicy>Privacy Policy</S.PrivacyPolicy>
             <S.Terms>Terms & Conditions</S.Terms>
           </S.Information>
+
           <S.Information>
             <S.InformationTitle>Service</S.InformationTitle>
             <S.AboutUs>About Us</S.AboutUs>
@@ -55,6 +59,7 @@ function Footer() {
             <S.PrivacyPolicy>Privacy Policy</S.PrivacyPolicy>
             <S.Terms>Terms & Conditions</S.Terms>
           </S.Information>
+
           <S.Information>
             <S.InformationTitle>My Account</S.InformationTitle>
             <S.AboutUs>About Us</S.AboutUs>
@@ -62,6 +67,7 @@ function Footer() {
             <S.PrivacyPolicy>Privacy Policy</S.PrivacyPolicy>
             <S.Terms>Terms & Conditions</S.Terms>
           </S.Information>
+
           <S.Information>
             <S.InformationTitle>Our Offers</S.InformationTitle>
             <S.AboutUs>About Us</S.AboutUs>
@@ -71,10 +77,12 @@ function Footer() {
           </S.Information>
         </S.About>
       </S.WrapperInfo>
-      <S.Line src={footer_line}></S.Line>
+
+      <S.Line src={footer_line} alt="footer line"></S.Line>
       <S.Copyright>© 2018 Ecommerce theme by www.bisenbaev.com</S.Copyright>
+
       <S.Payment>
-        <S.PaymentIcon src={pay_icon}></S.PaymentIcon>
+        <S.PaymentIcon src={pay_icon} alt="pay icon"></S.PaymentIcon>
       </S.Payment>
     </S.Wrapper>
   );

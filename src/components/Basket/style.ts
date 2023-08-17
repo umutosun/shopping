@@ -3,24 +3,24 @@ import { device } from "../../style/device";
 
 export const WrapperBasket = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin: 55px;
+  margin-top: 20px;
   align-items: center;
   gap: 10px;
-  @media ${device.mobileM} {
+
+  @media ${device.mobileM}, ${device.tablet}, ${device.laptop} {
     flex-direction: column;
-    margin-top: 20px;
-  }
-  @media ${device.tablet} {
-    margin-top: 30px;
-    flex-direction: column;
-  }
-  @media ${device.laptop} {
     margin: 55px;
     margin-top: 30px;
-    flex-direction: column;
+  }
+
+  @media ${device.mobileM} {
+    margin-top: 20px;
   }
 `;
+
 export const Wrapper = styled.div``;
 
 export const Line = styled.img`
@@ -28,6 +28,7 @@ export const Line = styled.img`
   @media ${device.mobileM} {
     width: 100%;
   }
+
   @media ${device.tablet} {
     width: 100%;
   }
@@ -36,15 +37,19 @@ export const Line = styled.img`
 export const ProductInfo = styled.div`
   display: flex;
   gap: 350px;
+
   @media ${device.mobileM} {
     gap: 50px;
   }
+
   @media ${device.tablet} {
     gap: 50px;
   }
+
   @media ${device.laptop} {
     gap: 350px;
   }
+
   @media ${device.desktop} {
     gap: 870px;
   }
@@ -52,21 +57,26 @@ export const ProductInfo = styled.div`
 export const ProductInfoLeft = styled.div`
   display: flex;
   width: 420px;
+
   @media ${device.mobileM} {
     width: 175px;
     margin-left: 10px;
   }
+
   @media ${device.mobileL} {
     margin-left: -50px;
   }
+
   @media ${device.tablet} {
     width: 330px;
     margin-left: 0;
   }
+
   @media ${device.laptop} {
     width: 420px;
     margin-left: 0;
   }
+
   @media ${device.desktop} {
     width: 420px;
     margin-left: -70px;
@@ -78,15 +88,19 @@ export const ButtonRemove = styled.img`
   height: 23px;
   margin-top: 50px;
   margin-right: 50px;
+
   @media ${device.mobileM} {
     margin-right: 10px;
   }
+
   @media ${device.tablet} {
     margin-right: 10px;
   }
+
   @media ${device.laptop} {
     margin-right: 50px;
   }
+
   @media ${device.desktop} {
     margin-right: 50px;
     width: 34px;
@@ -98,24 +112,28 @@ export const Image = styled.img`
   width: 100px;
   height: 100px;
   margin-top: 20px;
+
   @media ${device.mobileM} {
     margin-right: 0px;
     width: 50px;
     height: 50px;
     margin-top: 40px;
   }
+
   @media ${device.tablet} {
     margin-right: 10px;
     width: 70px;
     height: 70px;
     margin-top: 20px;
   }
+
   @media ${device.laptop} {
     margin-right: 10px;
     width: 100px;
     height: 100px;
     margin-top: 20px;
   }
+
   @media ${device.desktop} {
     margin-right: 10px;
     width: 150px;
@@ -133,21 +151,25 @@ export const Title = styled.h2`
   width: 235px;
   margin-left: 10px;
   margin-top: 50px;
+
   @media ${device.mobileM} {
     font-size: 10px;
     margin-top: 40px;
     width: 55px;
   }
+
   @media ${device.tablet} {
     font-size: 14px;
     margin-top: 50px;
     width: 135px;
   }
+
   @media ${device.laptop} {
     font-size: 16px;
     margin-top: 50px;
     width: 235px;
   }
+
   @media ${device.desktop} {
     font-size: 20px;
     margin-top: 50px;
@@ -155,28 +177,34 @@ export const Title = styled.h2`
     margin-left: 20px;
   }
 `;
+
 export const ProductInfoRight = styled.div`
   display: flex;
   width: 420px;
   gap: 75px;
+
   @media ${device.mobileM} {
     gap: 20px;
     width: 175px;
     margin-left: -50px;
   }
+
   @media ${device.tablet} {
     gap: 50px;
     width: 330px;
   }
+
   @media ${device.laptop} {
     gap: 75px;
     width: 420px;
   }
+
   @media ${device.desktop} {
     gap: 105px;
     width: 520px;
   }
 `;
+
 export const Price = styled.p`
   color: #262626;
   font-family: Poppins;
@@ -187,16 +215,19 @@ export const Price = styled.p`
   width: 65px;
   height: 21px;
   margin-top: 45px;
+
   @media ${device.mobileM} {
     font-size: 12px;
     width: 50px;
     height: 21px;
   }
+
   @media ${device.tablet} {
     font-size: 18px;
     width: 65px;
     height: 21px;
   }
+
   @media ${device.desktop} {
     font-size: 24px;
     width: 65px;
@@ -204,6 +235,7 @@ export const Price = styled.p`
     margin-left: -110px;
   }
 `;
+
 export const Button = styled.button`
   display: flex;
   background-color: #f6f7f8;
@@ -216,16 +248,19 @@ export const Button = styled.button`
   border: 1px solid #f6f7f8;
   margin-top: 45px;
   width: 114px;
+
   @media ${device.mobileM} {
     width: 94px;
     height: 10px;
     padding: 10px;
   }
+
   @media ${device.tablet} {
     width: 114px;
     height: 30px;
     padding: 15px;
   }
+
   @media ${device.desktop} {
     width: 124px;
     height: 30px;
@@ -240,9 +275,11 @@ export const ButtonDecrement = styled.p`
   font-weight: 600;
   cursor: pointer;
   color: #33a0ff;
+
   @media ${device.mobileM} {
     font-size: 12px;
   }
+
   @media ${device.tablet} {
     font-size: 18px;
   }
@@ -255,9 +292,11 @@ export const Quantity = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
   @media ${device.mobileM} {
     font-size: 12px;
   }
+
   @media ${device.tablet} {
     font-size: 18px;
   }
@@ -270,9 +309,11 @@ export const ButtonIncrement = styled.p`
   font-weight: 600;
   cursor: pointer;
   color: #33a0ff;
+
   @media ${device.mobileM} {
     font-size: 12px;
   }
+
   @media ${device.tablet} {
     font-size: 20px;
   }
@@ -286,9 +327,11 @@ export const UnitPrice = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
   @media ${device.mobileM} {
     font-size: 12px;
   }
+
   @media ${device.tablet} {
     font-size: 18px;
   }

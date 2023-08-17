@@ -15,9 +15,11 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   padding-top: 15px;
   margin-bottom: 80px;
+
   @media ${device.mobileM} {
     left: 80px;
   }
+
   @media ${device.tablet} {
     left: 5px;
   }
@@ -34,14 +36,17 @@ export const Image = styled.img`
   &:hover {
     transition: 0.3s, background-size 0.3s 0.3s;
     width: 60%;
+
     @media ${device.desktop} {
       width: 70%;
     }
   }
+
   @media ${device.desktop} {
     width: 60%;
   }
 `;
+
 export const Info = styled.div`
   border: 1px #b5caca;
   height: 60px;
@@ -59,10 +64,6 @@ export const Price = styled.p`
   letter-spacing: 0.5px;
   margin-top: 25px;
   margin-left: 85px;
-  @media ${device.mobileM} {
-  }
-  @media ${device.tablet} {
-  }
 `;
 
 export const Title = styled.p`
@@ -75,12 +76,9 @@ export const Title = styled.p`
   line-height: 150%; /* 27px */
   letter-spacing: 0.5px;
 `;
+
 export const Rate = styled.img`
   position: absolute;
   margin-left: 60px;
   margin-top: 10px;
-  @media ${device.mobileM} {
-  }
-  @media ${device.tablet} {
-  }
 `;

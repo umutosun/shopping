@@ -26,7 +26,7 @@ const ProductDetail = ({ detail }: props) => {
   };
   return (
     <S.WrapperProduct>
-      <S.Image src={detail.image} alt="" />
+      <S.Image src={detail.image} alt="detail image" />
       <S.Info>
         <S.Title>{detail.title}</S.Title>
         <S.Description>{detail.description}</S.Description>

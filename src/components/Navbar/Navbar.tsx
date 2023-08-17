@@ -15,8 +15,8 @@ function Navbar() {
 
   return (
     <S.Wrapper>
-      <S.Icon src={navbar_icon}></S.Icon>
-      <S.Title onClick={() => navigate("/")}> UMUT'S MARKET</S.Title>
+      <S.Icon src={navbar_icon} />
+      <S.Title onClick={() => navigate("/")}>UMUT'S MARKET</S.Title>
       <S.Category>
         <S.Electronics>ELECTRONİCS</S.Electronics>
         <S.Jewelery>JEWELERY</S.Jewelery>

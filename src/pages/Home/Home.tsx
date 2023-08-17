@@ -9,10 +9,10 @@ import {
 
 import ProductCard from "../../components/ProductCard/ProductCard";
 import Catagories from "../../components/Catagories/Catagories";
+import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header/Header";
 
 import { getCategories } from "../../features/categorySlice";
-
-import Header from "../../components/Header/Header";
 
 import article_shoes from "../../assets/article_shoes.png";
 import underline from "../../assets/underline.png";
@@ -26,7 +26,6 @@ import article_three_shoes from "../../assets/article_three_shoes.png";
 import article_rate from "../../assets/article_rate.png";
 
 import * as S from "./style";
-import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   const [categories, setCategories] = useState<string>("");
@@ -77,6 +76,7 @@ const Home = () => {
       />
 
       <S.Search>Search</S.Search>
+
       <S.Title>Our Product</S.Title>
 
       <S.Category>
@@ -89,6 +89,7 @@ const Home = () => {
           />
         ))}
       </S.Category>
+
       {loading ? (
         <h1>Loading...</h1>
       ) : (
@@ -96,20 +97,27 @@ const Home = () => {
           {data && search.map((data, i) => <ProductCard key={i} data={data} />)}
         </S.WrapperProduct>
       )}
+
       <S.Sneakers>
         <S.Info>
           <S.P1>Adidas Men Running Sneakers</S.P1>
+
           <S.P2>Performance and design. Taken right to the edge.</S.P2>
+
           <S.P3>SHOP NOW</S.P3>
-          <S.Underline src={underline}></S.Underline>
+
+          <S.Underline src={underline} alt="underline" />
         </S.Info>
-        <S.Image src={article_shoes}></S.Image>
+
+        <S.Image src={article_shoes} />
       </S.Sneakers>
 
       <S.Article>
         <S.Shipping>
-          <S.CarIcon src={car_icon}></S.CarIcon>
+          <S.CarIcon src={car_icon} alt="car icon" />
+
           <S.ShippingTitle>FREE SHIPPING</S.ShippingTitle>
+
           <S.ShippingP>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
@@ -117,8 +125,10 @@ const Home = () => {
         </S.Shipping>
 
         <S.Refund>
-          <S.RefundIcon src={refund_icon}></S.RefundIcon>
+          <S.RefundIcon src={refund_icon} alt="refund icon" />
+
           <S.RefundTitle>100% REFUND</S.RefundTitle>
+
           <S.RefundP>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
@@ -126,8 +136,10 @@ const Home = () => {
         </S.Refund>
 
         <S.Support>
-          <S.SupportIcon src={support_icon}></S.SupportIcon>
+          <S.SupportIcon src={support_icon} alt="support icon" />
+
           <S.SupportTitle>SUPPORT 24/7</S.SupportTitle>
+
           <S.SupportP>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
@@ -137,12 +149,16 @@ const Home = () => {
 
       <S.ArticleTwo>
         <S.ArticleTitle>LATEST NEWS</S.ArticleTitle>
+
         <S.ArticleInfo>
           <S.Industry>
-            <S.IndustryIcon src={industry_icon}></S.IndustryIcon>
+            <S.IndustryIcon src={industry_icon} alt="industry icon" />
+
             <S.IndustryInfo>
               <S.IndustryInfoP1>01 Jan, 2015</S.IndustryInfoP1>
+
               <S.IndustryInfoP2>Fashion Industry</S.IndustryInfoP2>
+
               <S.IndustryInfoP3>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
@@ -151,10 +167,13 @@ const Home = () => {
           </S.Industry>
 
           <S.Tools>
-            <S.ToolsIcon src={tools_icon}></S.ToolsIcon>
+            <S.ToolsIcon src={tools_icon} alt="tools icon" />
+
             <S.ToolsInfo>
               <S.ToolsInfoP1>01 Jan, 2015</S.ToolsInfoP1>
+
               <S.ToolsInfoP2>Best Design Tools</S.ToolsInfoP2>
+
               <S.ToolsInfoP3>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
@@ -163,10 +182,13 @@ const Home = () => {
           </S.Tools>
 
           <S.Community>
-            <S.CommunityIcon src={community_icon}></S.CommunityIcon>
+            <S.CommunityIcon src={community_icon} alt="community icon" />
+
             <S.CommunityInfo>
               <S.CommunityInfoP1>01 Jan, 2015</S.CommunityInfoP1>
+
               <S.CommunityInfoP2>HR Community</S.CommunityInfoP2>
+
               <S.CommunityInfoP3>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
@@ -181,10 +203,13 @@ const Home = () => {
 
         <S.ArticleProduct>
           <S.ProductOne>
-            <S.ImageOne src={article_three_shoes}></S.ImageOne>
+            <S.ImageOne src={article_three_shoes} alt="article three shoes" />
+
             <S.ProductOneInfo>
               <S.OneTitle>Blue Swade Nike Sneakers</S.OneTitle>
-              <S.OneRate src={article_rate}></S.OneRate>
+
+              <S.OneRate src={article_rate} alt="article rate" />
+
               <S.ProductPrice>
                 <S.OnePrice>$499</S.OnePrice>
                 <S.OneDiscount>$599</S.OneDiscount>
@@ -193,10 +218,13 @@ const Home = () => {
           </S.ProductOne>
 
           <S.ProductOne>
-            <S.ImageOne src={article_three_shoes}></S.ImageOne>
+            <S.ImageOne src={article_three_shoes} alt="article three shoes" />
+
             <S.ProductOneInfo>
               <S.OneTitle>Blue Swade Nike Sneakers</S.OneTitle>
-              <S.OneRate src={article_rate}></S.OneRate>
+
+              <S.OneRate src={article_rate} alt="article rate" />
+
               <S.ProductPrice>
                 <S.OnePrice>$499</S.OnePrice>
                 <S.OneDiscount>$599</S.OneDiscount>
@@ -205,10 +233,13 @@ const Home = () => {
           </S.ProductOne>
 
           <S.ProductOne>
-            <S.ImageOne src={article_three_shoes}></S.ImageOne>
+            <S.ImageOne src={article_three_shoes} alt="article three shoes" />
+
             <S.ProductOneInfo>
               <S.OneTitle>Blue Swade Nike Sneakers</S.OneTitle>
+
               <S.OneRate src={article_rate}></S.OneRate>
+
               <S.ProductPrice>
                 <S.OnePrice>$499</S.OnePrice>
                 <S.OneDiscount>$599</S.OneDiscount>

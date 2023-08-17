@@ -8,12 +8,14 @@ import * as S from "./style";
 const Header = () => {
   return (
     <S.WrapperHeader>
-      <S.Image src={banner_photo}></S.Image>
+      <S.Image src={banner_photo} />
+
       <S.Sale>Super Flash Sale 50% Off</S.Sale>
+
       <S.SaleProduct>
         <S.Bag>
           <S.BagTitle>FS - QUILTED MAXI CROSS BAG</S.BagTitle>
-          <S.BagImage src={bag}></S.BagImage>
+          <S.BagImage src={bag} alt="bag image" />
           <S.BagPrice>$299,43</S.BagPrice>
           <S.BagDiscount>$534,33</S.BagDiscount>
           <S.BagPercentage>24%Off</S.BagPercentage>
@@ -21,7 +23,7 @@ const Header = () => {
 
         <S.Shoes>
           <S.ShoesTitle>FS - Nike Air Max 270 React...</S.ShoesTitle>
-          <S.ShoesImage src={shoes}></S.ShoesImage>
+          <S.ShoesImage src={shoes} alt="shoes image" />
           <S.ShoesPrice>$299,43</S.ShoesPrice>
           <S.ShoesDiscount>$534,33</S.ShoesDiscount>
           <S.ShoesPercentage>24%Off</S.ShoesPercentage>
@@ -29,7 +31,7 @@ const Header = () => {
 
         <S.ShoesTwo>
           <S.ShoesTwoTitle>FS - Nike Air Max 270 React...</S.ShoesTwoTitle>
-          <S.ShoesTwoImage src={shoes_two}></S.ShoesTwoImage>
+          <S.ShoesTwoImage src={shoes_two} alt="shoes two image" />
           <S.ShoesTwoPrice>$299,43</S.ShoesTwoPrice>
           <S.ShoesTwoDiscount>$534,33</S.ShoesTwoDiscount>
           <S.ShoesTwoPercentage>24%Off</S.ShoesTwoPercentage>
