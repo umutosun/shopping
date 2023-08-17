@@ -198,6 +198,7 @@ export const Search = styled.p`
     padding: 10px;
   }
 `;
+export const Loading = styled.h1``;
 
 export const Sneakers = styled.div`
   background-color: #40bfff;

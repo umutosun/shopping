@@ -91,7 +91,7 @@ const Home = () => {
       </S.Category>
 
       {loading ? (
-        <h1>Loading...</h1>
+        <S.Loading>Loading...</S.Loading>
       ) : (
         <S.WrapperProduct>
           {data && search.map((data, i) => <ProductCard key={i} data={data} />)}
@@ -101,14 +101,10 @@ const Home = () => {
       <S.Sneakers>
         <S.Info>
           <S.P1>Adidas Men Running Sneakers</S.P1>
-
           <S.P2>Performance and design. Taken right to the edge.</S.P2>
-
           <S.P3>SHOP NOW</S.P3>
-
           <S.Underline src={underline} alt="underline" />
         </S.Info>
-
         <S.Image src={article_shoes} />
       </S.Sneakers>
 
