@@ -1,52 +1,43 @@
 import { useEffect, useState } from "react";
 
-import { useAppDispatch, useAppSelector } from "../../store";
+import { useAppDispatch, useAppSelector } from "store";
 
-import {
-  fetchCategoryProduct,
-  fetchProduct,
-} from "../../features/productSlice";
+import { fetchCategoryProduct, fetchProduct } from "features/productSlice";
 
-import ProductCard from "../../components/ProductCard/ProductCard";
-import Catagories from "../../components/Catagories/Catagories";
-import Footer from "../../components/Footer/Footer";
-import Header from "../../components/Header/Header";
+import ProductCard from "components/ProductCard/ProductCard";
+import Catagories from "components/Catagories/Catagories";
+import Footer from "components/Footer/Footer";
+import Header from "components/Header/Header";
 
-import { getCategories } from "../../features/categorySlice";
+import { getCategories } from "features/categorySlice";
 
-import article_shoes from "../../assets/article_shoes.png";
-import underline from "../../assets/underline.png";
-import car_icon from "../../assets/car_icon.png";
-import refund_icon from "../../assets/refund_icon.png";
-import support_icon from "../../assets/support_icon.png";
-import industry_icon from "../../assets/industry_icon.png";
-import tools_icon from "../../assets/tools_icon.png";
-import community_icon from "../../assets/community_icon.png";
-import article_three_shoes from "../../assets/article_three_shoes.png";
-import article_rate from "../../assets/article_rate.png";
+import article_shoes from "assets/article_shoes.png";
+import underline from "assets/underline.png";
+import car_icon from "assets/car_icon.png";
+import refund_icon from "assets/refund_icon.png";
+import support_icon from "assets/support_icon.png";
+import industry_icon from "assets/industry_icon.png";
+import tools_icon from "assets/tools_icon.png";
+import community_icon from "assets/community_icon.png";
+import article_three_shoes from "assets/article_three_shoes.png";
+import article_rate from "assets/article_rate.png";
 
 import * as S from "./style";
 
 const Home = () => {
-  const [categories, setCategories] = useState<string>("");
-
   const dispatch = useAppDispatch();
 
   const { data } = useAppSelector((state) => state.product);
-
   const { category } = useAppSelector((state) => state.category);
-
-  const [search, setSearch] = useState(data);
-
   const loading = useAppSelector((state) => state.product.loading);
+
+  const [categories, setCategories] = useState<string>("");
+  const [search, setSearch] = useState(data);
+  const [searchValue, setSearchValue] = useState("");
 
   useEffect(() => {
     dispatch(getCategories());
   }, [dispatch]);
-
-  const all = () => {
-    setCategories("");
-  };
 
   useEffect(() => {
     if (categories) {
@@ -66,12 +57,20 @@ const Home = () => {
 
       <S.Input
         type="text"
-        placeholder="search for products..."
+        placeholder="Ürünleri arayın..."
+        value={searchValue} // Burada searchValue adında bir state kullanmanız gerekecektir
         onChange={(e) => {
-          let product = data.filter((item) =>
-            item.title.toLowerCase().includes(e.target.value.toLowerCase())
-          );
-          setSearch(product);
+          const inputValue = e.target.value;
+          setSearchValue(inputValue);
+
+          if (inputValue.length >= 3) {
+            let product = data.filter((item) =>
+              item.title.toLowerCase().includes(inputValue.toLowerCase())
+            );
+            setSearch(product);
+          } else {
+            setSearch(data); // Üç karakterden az ise, tüm ürünleri göster
+          }
         }}
       />
 
@@ -80,7 +79,7 @@ const Home = () => {
       <S.Title>Our Product</S.Title>
 
       <S.Category>
-        <S.All onClick={all}>All</S.All>
+        <S.All onClick={() => setCategories("")}>All</S.All>
         {category?.map((category, i) => (
           <Catagories
             key={i}
@@ -94,7 +93,10 @@ const Home = () => {
         <S.Loading>Loading...</S.Loading>
       ) : (
         <S.WrapperProduct>
-          {data && search.map((data, i) => <ProductCard key={i} data={data} />)}
+          {data &&
+            search.map((product, i) => (
+              <ProductCard key={i} product={product} />
+            ))}
         </S.WrapperProduct>
       )}
 

@@ -1,32 +1,29 @@
-import { useAppDispatch } from "../../store";
+import { useAppDispatch } from "store";
 
 import {
-  getBasketTotal,
   decreaseBasketItem,
   deleteBasketItem,
   icreaseBasketItem,
-} from "../../features/basketSlice";
+} from "features/basketSlice";
 
-import remove_icon from "../../assets/remove_icon.png";
-import basket_line from "../../assets/basket_line.png";
+import remove_icon from "assets/remove_icon.png";
+import basket_line from "assets/basket_line.png";
 import * as S from "./style";
+import { Product } from "types/product";
 
-const Basket = ({ product }: any) => {
+const Basket = ({ product }: { product: Product }) => {
   const dispatch = useAppDispatch();
 
   const increment = () => {
     dispatch(icreaseBasketItem({ id: product.id }));
-    dispatch(getBasketTotal());
   };
 
   const decrement = () => {
     dispatch(decreaseBasketItem({ id: product.id }));
-    dispatch(getBasketTotal());
   };
 
   const remove = () => {
     dispatch(deleteBasketItem(product.id));
-    dispatch(getBasketTotal());
   };
   return (
     <S.WrapperBasket>

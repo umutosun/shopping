@@ -1,8 +1,8 @@
-import icon from "../../assets/navbar_icon.png";
-import facebook_icon from "../../assets/facebook_icon.png";
-import twitter_icon from "../../assets/twitter_icon.png";
-import footer_line from "../../assets/footer_line.png";
-import pay_icon from "../../assets/pay_icon.png";
+import icon from "assets/navbar_icon.png";
+import facebook_icon from "assets/facebook_icon.png";
+import twitter_icon from "assets/twitter_icon.png";
+import footer_line from "assets/footer_line.png";
+import pay_icon from "assets/pay_icon.png";
 import * as S from "./style";
 
 function Footer() {

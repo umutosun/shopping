@@ -1,7 +1,7 @@
-import banner_photo from "../../assets/banner_photo.png";
-import bag from "../../assets/bag.png";
-import shoes from "../../assets/shoes.png";
-import shoes_two from "../../assets/shoes_two.png";
+import banner_photo from "assets/banner_photo.png";
+import bag from "assets/bag.png";
+import shoes from "assets/shoes.png";
+import shoes_two from "assets/shoes_two.png";
 
 import * as S from "./style";
 
