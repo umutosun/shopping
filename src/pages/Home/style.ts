@@ -152,15 +152,15 @@ export const Input = styled.input`
 
   @media ${device.laptop} {
     margin-left: 930px;
-    margin-top: 170px;
-    height: 30.3px;
+    margin-top: 175px;
+    height: 15.3px;
     width: 230px;
   }
 
   @media ${device.desktop} {
     margin-left: 1430px;
-    margin-top: 170px;
-    height: 43.3px;
+    margin-top: 185px;
+    height: 25.3px;
     width: 230px;
   }
 `;
@@ -173,7 +173,7 @@ export const Search = styled.p`
   margin-top: 170px;
   background-color: #40bfff;
   color: #fff;
-
+  cursor: pointer;
   @media ${device.mobileM} {
     margin-left: 310px;
     margin-top: 70px;
@@ -183,19 +183,21 @@ export const Search = styled.p`
   @media ${device.tablet} {
     margin-left: 620px;
     margin-top: 70px;
-    padding: 5px;
+    padding: 6px;
   }
 
   @media ${device.laptop} {
-    margin-left: 1160px;
-    margin-top: 170px;
-    padding: 3.5px;
+    margin-left: 1125px;
+    margin-top: 175px;
+    padding: 0px;
+    height: 17px;
+    font-size: 12px;
   }
 
   @media ${device.desktop} {
-    margin-left: 1650px;
-    margin-top: 170px;
-    padding: 10px;
+    margin-left: 1640px;
+    margin-top: 185px;
+    padding: 5px;
   }
 `;
 export const Loading = styled.h1``;

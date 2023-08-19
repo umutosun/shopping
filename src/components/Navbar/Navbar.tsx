@@ -1,10 +1,10 @@
-import { useAppSelector } from "../../store";
+import { useAppSelector } from "store";
 
 import { SlBasket } from "react-icons/sl";
 
 import { useNavigate } from "react-router-dom";
 
-import navbar_icon from "./../../assets/navbar_icon.png";
+import navbar_icon from "assets/navbar_icon.png";
 
 import * as S from "./style";
 

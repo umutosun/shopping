@@ -1,27 +1,17 @@
-import { useEffect } from "react";
+import { useAppSelector } from "store";
 
-import { useAppDispatch, useAppSelector } from "../../store";
+import Basket from "components/Basket/Basket";
+import Footer from "components/Footer/Footer";
 
-import { getBasketTotal } from "../../features/basketSlice";
-
-import Basket from "../../components/Basket/Basket";
-import Footer from "../../components/Footer/Footer";
-
-import { Product } from "../../types/product";
+import { Product } from "types/product";
 
 import * as S from "./style";
+import { getBasketTotals } from "utils/basketTotal";
 
 function Cart() {
-  const dispatch = useAppDispatch();
+  const { products } = useAppSelector((state) => state.basket);
 
-  const { products, totalAmount, itemCount } = useAppSelector(
-    (state) => state.basket
-  );
-
-  useEffect(() => {
-    dispatch(getBasketTotal());
-  }, [dispatch]);
-
+  const total = getBasketTotals(products);
   return (
     <S.Wrapper>
       <S.WrapperTitle>
@@ -45,7 +35,7 @@ function Cart() {
           <S.TotalAmount>
             <S.WrapperAmount>
               <S.TotalAmountTitle>Total </S.TotalAmountTitle>
-              <S.Amount>{totalAmount}$</S.Amount>
+              <S.Amount>{total}$</S.Amount>
             </S.WrapperAmount>
 
             <S.BuyButton>BUY</S.BuyButton>

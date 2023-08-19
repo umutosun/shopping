@@ -61,16 +61,6 @@ const basketSlice = createSlice({
       state.products = tempCart;
       storeInLocalStorage(state.products);
     },
-
-    getBasketTotal: (state) => {
-      state.totalAmount = state.products.reduce(
-        (basketTotal: number, product: Product) => {
-          return (basketTotal += product.price * product.quantity);
-        },
-        0
-      );
-      state.itemCount = state.products.length;
-    },
   },
 });
 
@@ -79,6 +69,5 @@ export const {
   icreaseBasketItem,
   decreaseBasketItem,
   deleteBasketItem,
-  getBasketTotal,
 } = basketSlice.actions;
 export default basketSlice.reducer;

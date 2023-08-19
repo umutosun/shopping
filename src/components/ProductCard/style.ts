@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   padding-top: 15px;
   margin-bottom: 80px;
-
+  height: 370px;
   @media ${device.mobileM} {
     left: 80px;
   }
@@ -36,7 +36,6 @@ export const Image = styled.img`
   &:hover {
     transition: 0.3s, background-size 0.3s 0.3s;
     width: 60%;
-
     @media ${device.desktop} {
       width: 70%;
     }

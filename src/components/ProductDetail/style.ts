@@ -16,7 +16,7 @@ export const WrapperProduct = styled.div`
 export const Image = styled.img`
   width: 300px;
   margin: 90px;
-
+  height: 450px;
   @media ${device.mobileM} {
     width: 200px;
     margin-top: 40px;

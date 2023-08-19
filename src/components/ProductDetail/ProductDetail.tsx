@@ -1,18 +1,14 @@
-import { useAppDispatch, useAppSelector } from "../../store";
+import { useAppDispatch, useAppSelector } from "store";
 
-import { Product } from "../../types/product";
+import { Product, ProductState } from "types/product";
 
-import { addBasketItem, deleteBasketItem } from "../../features/basketSlice";
+import { addBasketItem, deleteBasketItem } from "features/basketSlice";
 
 import { NotificationManager } from "react-notifications";
 
 import * as S from "./style";
 
-type props = {
-  detail: Product;
-};
-
-const ProductDetail = ({ detail }: props) => {
+const ProductDetail = ({ detail }: { detail: Product }) => {
   const dispatch = useAppDispatch();
   const basketItems = useAppSelector((state) => state.basket.products);
   const addBasket = () => {
@@ -24,6 +20,7 @@ const ProductDetail = ({ detail }: props) => {
     dispatch(deleteBasketItem(productToDelete));
     NotificationManager.info("Product removed from cart", "", 3000);
   };
+
   return (
     <S.WrapperProduct>
       <S.Image src={detail.image} alt="detail image" />
